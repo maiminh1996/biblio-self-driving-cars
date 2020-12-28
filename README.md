@@ -2,30 +2,33 @@
 ## Contents
 
 1. [3D object detection](#3d-object-detection)
-	+ [Evaluation metrics](#evaluation-metrics-(3d-od))
-	+ [Datasets](#datasets-(3d-od))
-	+ [Approaches](#Approaches-(3d-od))
-2. [Depth estimation/ Depth completion](#depth-estimation) 
-	+ [Evaluation metrics](#evaluation-metrics)
-	+ [Datasets](#datasets)
-	+ [Approaches](#Approaches)
+	+ [Evaluation metrics](#evaluation-metrics-3d-od)
+	+ [Datasets](#datasets-3d-od)
+	+ [Approaches](#Approaches-3d-od)
+2. [Depth estimation](#depth-estimation) 
+	+ [Evaluation metrics](#evaluation-metrics-depth)
+	+ [Datasets](#datasets-depth)
+	+ [Approaches](#Approaches-depth)
 3. [Segmentation](#segmentation)
 	+ [Evaluation metrics](#evaluation-metrics)
 	+ [Datasets](#datasets)
 	+ [Approaches](#Approaches)
 4. [2D object detection](#2d-object-detection)
+	+ [Evaluation metrics](#evaluation-metrics-2d-od)
+	+ [Datasets](#datasets-2d-od)
+	+ [Approaches](#Approaches-2d-od)
 5. [Sensors](#sensors)
 
 
 
-## 3D Dbject Detection
-### Evaluation metrics (3D OD)
+## 3D object Detection
+### Evaluation metrics 3D OD
 
 > **_Metrics:_**  AP 3D, AP BEV
 
 > **_How to calculate:_** [[more]](3d_od/evaluation.md)
 
-### Datasets (3D OD)
+### Datasets 3D OD
 
 > **_How to obtain 3D bounding box:_**
 
@@ -41,7 +44,7 @@
 
 </details>
 
-### Approaches (3D OD)
+### Approaches 3D OD
 > **_Type 1:_** monocular (M), stereo (S), LiDAR 64 beams (L), LiDAR 4 beams (L4), RADAR (R)</br> 
 > **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
 
@@ -74,7 +77,7 @@
 </details>
 
 ## Depth estimation
-### Evaluation metrics
+### Evaluation metrics depth
 
 > **_Depth prediction (DP):_** takes only monocular/ stereo as input</br>
 > **_Depth completion (DC):_** takes depth sensor (ex: LiDAR, RADAR) as input component</br>
@@ -86,7 +89,7 @@
 
 
 
-### Datasets
+### Datasets depth
 > **_How to obtain depth ground truth:_** 
 
 <details>
@@ -100,7 +103,7 @@
 
 </details>
 
-### Approaches
+### Approaches depth
 
 > **_Type 1:_** monocular (M), stereo (S), LiDAR (L), RADAR (R)</br> 
 > **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
@@ -129,30 +132,21 @@
 -->
 
 ## 2D object detection
-### Evaluation metrics
-
-<details>
-  <summary>Click to expand!</summary>
-
-  text
-
-</details>
-
-### Datasets
-
-<details>
-  <summary>Click to expand!</summary>
-
-  text
-
-</details>
-
-### Evaluation metrics
+### Evaluation metrics 2D OD
 
 > **_Metrics:_**  AP 2D
 
 > **_How to calculate:_** [[more]](3d_od/evaluation.md)
+### Datasets 2D OD
 
+<details>
+  <summary>Click to expand!</summary>
+
+  text
+
+</details>
+
+### Approaches 2D OD
 <details>
   <summary>Click to expand!</summary>
 
