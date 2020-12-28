@@ -1,15 +1,10 @@
 # Self-driving cars paper notes
 ## Contents
 
-1. [3D object detection (sorted by sensor type)](#3d-object-detection)
-	+ [Evaluation metrics](#evaluation-metrics)
-	+ [Datasets](#datasets)
-	+ [Approaches](#Approaches)
-	+ [Monocular-based methods (RGB)](#monocular-based-methods)
-	+ [Binocular-based methods (stereo)](#binocular-based-methods)
-	+ [Lidar-based methods](#lidar-based-methods)
-	+ [Fusion-based methods](#fusion-based-methods)
-	+ [Others](#others)
+1. [3D object detection](#3d-object-detection)
+	+ [Evaluation metrics](#evaluation-metrics-(3d-od))
+	+ [Datasets](#datasets-(3d-od))
+	+ [Approaches](#Approaches-(3d-od))
 2. [Depth estimation/ Depth completion](#depth-estimation) 
 	+ [Evaluation metrics](#evaluation-metrics)
 	+ [Datasets](#datasets)
@@ -21,51 +16,62 @@
 4. [2D object detection](#2d-object-detection)
 5. [Sensors](#sensors)
 
-***
 
 
 ## 3D Dbject Detection
-### Evaluation metrics
+### Evaluation metrics (3D OD)
 
 > **_Metrics:_**  AP 3D, AP BEV
 
 > **_How to calculate:_** [[more]](3d_od/evaluation.md)
 
-### Datasets
+### Datasets (3D OD)
+
+> **_How to obtain 3D bounding box:_**
+
+<details>
+  <summary>Click to expand!</summary>
+
 | Ref | Highlight description |
 | -- | -- | 
 | KITTI </br>(3D OD) </br> [[CVPR12]](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [[IJRR13]](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [[NIPS15]](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples </br> [[more]](dataset/kitti.md) | <!-- -->
 | Weather augmented </br>[[ICCV19]](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes | <!-- -->
 | Seeing Through Fog </br>[[CVPR20]](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [[ICCV19]](https://github.com/gruberto/Gated2Depth) | <!-- -->
 | Canadian Adverse Driving Conditions </br>[[arXiv20]](https://arxiv.org/pdf/2001.10117.pdf) | ●  56,000 camera images, 7,000 LiDAR sweeps, </br> ● Real dataset: 75 scenes of 50-100 frames each </br> ● Adverse weather driving conditions, including snow | 
-<!--
-### Monocular-based methods
 
-| Ref  | Sensor | Object Type | Sensing Modality Representations and Processing | Net | How to generate Region Proposals (RP) | When to fuse | Fusion Operation and Method | Fusion Level | Data | Note |
-| -- |:--:| :--:| --:| --:| --:| --:| --:| --: | --:| --:|
-| Pseudo-LiDAR, [[CVPR 2019]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf)| [[more](paper_notes/test.md)] | 
-| Pseudo-LiDAR e2e [[ICCV 2019]](https://github.com/xinshuoweng/Mono3DPLiDAR) |
+</details>
 
-### Binocular-based methods
+### Approaches (3D OD)
+> **_Type 1:_** monocular (M), stereo (S), LiDAR 64 beams (L), LiDAR 4 beams (L4), RADAR (R)</br> 
+> **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
 
-| Ref | Sensors | Object Type | Sensing Modality Representations and Processing | Network Pipeline | How to generate Region Proposals (RP) | When to fuse | Fusion Operation and Method | Fusion Level | Datasets | Notes |
-| -- |:--:| :--:| --:| --:| --:| --:| --:| --: | --:| --:|
-| CG-Stereo  [[arXiv 2020]](https://arxiv.org/pdf/2003.05505.pdf) |
-| Pseudo-LiDAR, [[CVPR 2019]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf)| [[more](paper_notes/test.md)] | 
-| Pseudo-LiDAR V3 E2E [[CVPR 2020]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Qian_End-to-End_Pseudo-LiDAR_for_Image-Based_3D_Object_Detection_CVPR_2020_paper.pdf) |
+<details>
+  <summary>Click to expand!</summary>
 
-### LiDAR-based methods
+| Ref | Type | Data | Highlight description |
+| :-- | :--: | :-- | :-- | 
+| <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>Monocular<img src="doc/fire.png" alt="drawing" width="20"/> </p> |<p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> | <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> |<!-- -->
+| Pseudo-LiDAR </br> [[CVPR19]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | M / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| Pseudo-LiDAR e2e </br>[[ICCV19]](https://github.com/xinshuoweng/Mono3DPLiDAR) | M / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/>Binocular<img src="doc/fire.png" alt="drawing" width="20"/> </p> |<p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> | <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> |<!-- -->
+| Pseudo-LiDAR V3 E2E </br> [[CVPR20]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Qian_End-to-End_Pseudo-LiDAR_for_Image-Based_3D_Object_Detection_CVPR_2020_paper.pdf) | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| CG-Stereo </br> [[arXiv20]](https://arxiv.org/pdf/2003.05505.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| Pseudo-LiDAR </br> [[CVPR19]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| Pseudo-LiDAR ++</br> [[ICRL21]](https://arxiv.org/pdf/1906.06310.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/>LiDAR<img src="doc/fire.png" alt="drawing" width="20"/> </p> |<p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> | <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> |<!-- -->
+| PointRCNN | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| <p align="center"><img src="doc/fire.png" alt="drawing" width="20"/>Fusion<img src="doc/fire.png" alt="drawing" width="20"/> </p> |<p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> | <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> |<!-- -->
+| Pseudo-LiDAR ++</br> [[ICRL21]](https://arxiv.org/pdf/1906.06310.pdf) | S+L4 / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
 
-### Fusion-based methods
-
-### Others
-| Ref  | Sensors | Object Type | Sensing Modality Representations and Processing | Network Pipeline | How to generate Region Proposals (RP) | When to fuse | Fusion Operation and Method | Fusion Level | Datasets |
-| -- |:--:| :--:| --:| --:| --:| --:| --:| --: | --:|
-| Pseudo LiDAR ++, [[ICRL 2021]](https://arxiv.org/pdf/1906.06310.pdf)| Stereo, Simulation LiDAR 4 beams |
-
-***
--->
-
+</details>
 
 ## Depth estimation
 ### Evaluation metrics
@@ -83,19 +89,24 @@
 ### Datasets
 > **_How to obtain depth ground truth:_** 
 
+<details>
+  <summary>Click to expand!</summary>
+
 | Ref | Highlight description |
 | -- | -- | 
 | KITTI (stereo) </br> [[CVPR12]](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [[IJRR13]](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Gth: projected LiDAR 64 beams pose for 11 odometry sequences </br> ● the 200 training images of KITTI stereo 2015 **overlap** with thevalidation images of KITTI object detection [[more]](dataset/kitti.md)| <!-- -->
 | Scene Flow </br> [[CVPR16]](https://openaccess.thecvf.com/content_cvpr_2016/papers/Mayer_A_Large_Dataset_CVPR_2016_paper.pdf) | ● Stereo (960x540) </br> ● Synthetic dataset: 35454 training & 4370 testing images </br> ● Gth: dense and elaborate disparity maps [[more]](dataset/sceneflow.md) | <!-- -->
 | Cityscapes </br> [[CVPR16]](https://www.cityscapes-dataset.com/citation/) | ● Stereo (1024×2048) </br> ● Gth: 22,973 stereo image pairs training  </br> ● Real dataset: 50 cities forseveral months </br> ● 5000 images with fine annotations and 20000 images  with coarse annotations [[more]](dataset/cityscapes.md)| <!-- -->
 
+</details>
+
 ### Approaches
 
 > **_Type 1:_** monocular (M), stereo (S), LiDAR (L), RADAR (R)</br> 
 > **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
 
-
-| Ref | Sen+Type | Data | Net | Loss | Note |
+<details>
+  <summary>Click to expand!</summary>
 
 | Ref | Type | Data | Highlight description |
 | :-- | :--: | -- | -- | 
@@ -104,6 +115,8 @@
 | FAL </br> [[NIPS20]](https://proceedings.neurips.cc/paper/2020/file/951124d4a093eeae83d9726a20295498-Paper.pdf) | M / self-sup | KITTI | | Occlusion-free reconstruction loss |  <!-- -->
 | PSMNet [[CVPR18]](https://openaccess.thecvf.com/content_cvpr_2018/papers/Chang_Pyramid_Stereo_Matching_CVPR_2018_paper.pdf) | S / sup | ● KITTI </br> ● Scene Flow 
 
+</details>
+
 <!--
 
 
@@ -111,20 +124,43 @@
 ## Segmentation
 ### Approaches
 
-***
+
 
 -->
 
 ## 2D object detection
 ### Evaluation metrics
 
+<details>
+  <summary>Click to expand!</summary>
+
+  text
+
+</details>
+
+### Datasets
+
+<details>
+  <summary>Click to expand!</summary>
+
+  text
+
+</details>
+
+### Evaluation metrics
+
 > **_Metrics:_**  AP 2D
 
 > **_How to calculate:_** [[more]](3d_od/evaluation.md)
 
-| Ref | Des |
-| -- | -- |
-| OneNet </br> [[arXiv]](https://arxiv.org/pdf/2012.05780.pdf) | |
+<details>
+  <summary>Click to expand!</summary>
+
+| Ref | Type | Data | Highlight description | 
+| -- | -- | -- | -- | 
+| OneNet </br> [[arXiv]](https://arxiv.org/pdf/2012.05780.pdf) | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+
+</details>
 
 ## Sensors
 > **_LiDAR:_** [awesome-LiDAR](https://github.com/szenergy/awesome-lidar#datasets), [awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis), [awesome-point-cloud-deep-learning](https://github.com/dashidhy/awesome-point-cloud-deep-learning)
@@ -148,7 +184,7 @@
 | -- | -- | -- | -- | 
 | Seeing Through Fog [[CVPR 2020]](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [[ICCV 2019]](https://github.com/gruberto/Gated2Depth) |
 
-***
+
 
 -->
 
@@ -165,15 +201,18 @@
 3. A collapsible section with markdown
 <details>
   <summary>Click to expand!</summary>
-  
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
+  text
 </details>
 
 4. list
 <ul><li>item1</li><li>item2</li></ul>
 5. point boucle ●
+
+
+6. 
+| Ref | Type | Data | Highlight description |
+| :-- | :--: | -- | -- | 
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contri: |
+
+7. <p align="center" vertical-align="middle"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>
 -->
