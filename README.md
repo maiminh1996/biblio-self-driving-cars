@@ -10,9 +10,9 @@
 	+ [Datasets](#datasets-depth)
 	+ [Approaches](#Approaches-depth)
 3. [Segmentation](#segmentation)
-	+ [Evaluation metrics](#evaluation-metrics)
-	+ [Datasets](#datasets)
-	+ [Approaches](#Approaches)
+	+ [Evaluation metrics](#evaluation-metrics-seg)
+	+ [Datasets](#datasets-seg)
+	+ [Approaches](#Approaches-seg)
 4. [2D object detection](#2d-object-detection)
 	+ [Evaluation metrics](#evaluation-metrics-2d-od)
 	+ [Datasets](#datasets-2d-od)
@@ -21,7 +21,7 @@
 
 
 
-## 3D object Detection
+## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>3D object Detection<img src="doc/fire.png" alt="drawing" width="20"/> </p>
 ### Evaluation metrics 3D OD
 
 > **_Metrics:_**  AP 3D, AP BEV
@@ -76,7 +76,7 @@
 
 </details>
 
-## Depth estimation
+## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>Depth estimation<img src="doc/fire.png" alt="drawing" width="20"/> </p>
 ### Evaluation metrics depth
 
 > **_Depth prediction (DP):_** takes only monocular/ stereo as input</br>
@@ -120,18 +120,36 @@
 
 </details>
 
-<!--
 
 
 
-## Segmentation
-### Approaches
+## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>Segmentation<img src="doc/fire.png" alt="drawing" width="20"/> </p>
+### Evaluation metrics seg
+
+> **_Metrics:_** 
+
+> **_How to calculate:_** [[more]]()
+### Datasets seg
+
+<details>
+  <summary>Click to expand!</summary>
+
+  text
+
+</details>
+
+### Approaches seg
+<details>
+  <summary>Click to expand!</summary>
+
+  Text here
+
+</details>
 
 
 
--->
 
-## 2D object detection
+## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>2D object detection<img src="doc/fire.png" alt="drawing" width="20"/> </p>
 ### Evaluation metrics 2D OD
 
 > **_Metrics:_**  AP 2D
@@ -156,7 +174,8 @@
 
 </details>
 
-## Sensors
+## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>Sensors<img src="doc/fire.png" alt="drawing" width="20"/> </p>
+
 > **_LiDAR:_** [awesome-LiDAR](https://github.com/szenergy/awesome-lidar#datasets), [awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis), [awesome-point-cloud-deep-learning](https://github.com/dashidhy/awesome-point-cloud-deep-learning)
 
 | Comp | Camera | LiDAR | RADAR |
