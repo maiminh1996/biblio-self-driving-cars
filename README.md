@@ -1,11 +1,13 @@
+<p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="50"/><img src="doc/fire.png" alt="drawing" width="30"/></p>
+
 # Self-driving cars paper notes
 ## Contents
 
-1. [3D object detection](#3d-object-detection)
+1. [3D Object Detection](#3d-object-detection)
 	+ [Evaluation metrics](#evaluation-metrics-3d-od)
 	+ [Datasets](#datasets-3d-od)
 	+ [Approaches](#Approaches-3d-od)
-2. [Depth estimation](#depth-estimation) 
+2. [Depth Estimation](#depth-estimation) 
 	+ [Evaluation metrics](#evaluation-metrics-depth)
 	+ [Datasets](#datasets-depth)
 	+ [Approaches](#Approaches-depth)
@@ -13,15 +15,15 @@
 	+ [Evaluation metrics](#evaluation-metrics-seg)
 	+ [Datasets](#datasets-seg)
 	+ [Approaches](#Approaches-seg)
-4. [2D object detection](#2d-object-detection)
+4. [2D Object Detection](#2d-object-detection)
 	+ [Evaluation metrics](#evaluation-metrics-2d-od)
 	+ [Datasets](#datasets-2d-od)
 	+ [Approaches](#Approaches-2d-od)
 5. [Sensors](#sensors)
 
+<p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
 
-
-## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>3D object Detection<img src="doc/fire.png" alt="drawing" width="20"/> </p>
+## 3D Object Detection
 ### Evaluation metrics 3D OD
 
 > **_Metrics:_**  AP 3D, AP BEV
@@ -76,7 +78,9 @@
 
 </details>
 
-## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>Depth estimation<img src="doc/fire.png" alt="drawing" width="20"/> </p>
+<p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
+
+## Depth Estimation
 ### Evaluation metrics depth
 
 > **_Depth prediction (DP):_** takes only monocular/ stereo as input</br>
@@ -121,9 +125,9 @@
 </details>
 
 
+<p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
 
-
-## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>Segmentation<img src="doc/fire.png" alt="drawing" width="20"/> </p>
+## Segmentation
 ### Evaluation metrics seg
 
 > **_Metrics:_** 
@@ -147,9 +151,9 @@
 </details>
 
 
+<p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
 
-
-## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>2D object detection<img src="doc/fire.png" alt="drawing" width="20"/> </p>
+## 2D Object Detection
 ### Evaluation metrics 2D OD
 
 > **_Metrics:_**  AP 2D
@@ -174,13 +178,20 @@
 
 </details>
 
-## <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>Sensors<img src="doc/fire.png" alt="drawing" width="20"/> </p>
+<p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
+
+## Sensors
 
 > **_LiDAR:_** [awesome-LiDAR](https://github.com/szenergy/awesome-lidar#datasets), [awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis), [awesome-point-cloud-deep-learning](https://github.com/dashidhy/awesome-point-cloud-deep-learning)
+
+<details>
+  <summary>Click to expand!</summary>
 
 | Comp | Camera | LiDAR | RADAR |
 | -- | -- | -- | -- | 
 | 
+
+</details>
 
 
 <!--
