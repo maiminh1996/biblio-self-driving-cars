@@ -21,6 +21,8 @@
 	+ [Approaches](#Approaches-2d-od)
 5. [Sensors](#sensors)
 
+> **_Reading & Writting process bar ![Progress](https://progress-bar.dev/50/?title=done)_**
+
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
 
 ## 3D Object Detection
@@ -39,13 +41,14 @@
 
   | Ref | Highlight description |
   | -- | -- | 
-  | KITTI (3D OD) [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples [[more]](dataset/kitti.md) | <!-- -->
-  | KITTI-Object-Depth (KOD) [<kbd>AAAI 20</kbd>](https://arxiv.org/pdf/1909.07701.pdf) | Collect the corresponding gth depth map (11 frame) for each image in KITTI (3D OD) training set [[more]](3d_od/foresee.md)| <!-- -->
+  | KITTI (3D OD) [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples ![Progress](https://progress-bar.dev/100/?title=done) [[more]](dataset/kitti.md) | <!-- -->
+  | KITTI-Object-Depth (KOD) [<kbd>AAAI 20</kbd>](https://arxiv.org/pdf/1909.07701.pdf) | Collect the corresponding gth depth map (11 frame) for each image in KITTI (3D OD) training set ![Progress](https://progress-bar.dev/0/?title=done) [[more]](3d_od/foresee.md)| <!-- -->
   | Weather augmented [<kbd>ICCV 19</kbd>](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes | <!-- -->
   | Seeing Through Fog [<kbd>CVPR 20</kbd>](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [<kbd>ICCV 19</kbd>](https://github.com/gruberto/Gated2Depth) | <!-- -->
-  | Canadian Adverse Driving Conditions [<kbd>arXiv 20</kbd>](https://arxiv.org/pdf/2001.10117.pdf) | ●  56,000 camera images, 7,000 LiDAR sweeps, </br> ● Real dataset: 75 scenes of 50-100 frames each </br> ● Adverse weather driving conditions, including snow | 
+  | Canadian Adverse Driving Conditions [<kbd>arXiv 20</kbd>](https://arxiv.org/pdf/2001.10117.pdf) | ●  56000 camera images, 7000 LiDAR sweeps, </br> ● Real dataset: 75 scenes of 50-100 frames each </br> ● Adverse weather driving conditions, including snow | 
 
 </details>
+
 
 ### Approaches 3D OD
 > **_Type 1:_** monocular (M), stereo (S), LiDAR 64 beams (L), LiDAR 4 beams (L4), RADAR (R)</br> 
@@ -57,7 +60,7 @@
 | Ref | Type | Data | Highlight description |
 | :-- | :--: | :-- | :-- | 
 |  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
-| Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | M / sup | KITTI | ● Pipeline: Depth estimator ➔ convert into pseudo pcl ➔ LiDAR-based detector </br> ● Contrib: Convert depth into pseudo 3d point clouds [[more]](3d_od/pseudo_lidar.md) |
+| Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | M / sup | KITTI | ● Pipeline: Depth estimator ➔ convert into pseudo pcl ➔ LiDAR-based detector </br> ● Contrib: Convert depth into pseudo 3d point clouds ![Progress](https://progress-bar.dev/100/?title=done) [[more]](3d_od/pseudo_lidar.md) |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | Pseudo-LiDAR e2e </br>[<kbd>ICCV 19</kbd>](https://github.com/xinshuoweng/Mono3DPLiDAR) | M / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
@@ -175,7 +178,7 @@
 
 | Ref | Type | Data | Highlight description | 
 | -- | -- | -- | -- | 
-| OneNet </br> [<kbd>arXiv</kbd>](https://arxiv.org/pdf/2012.05780.pdf) | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
+| OneNet </br> [<kbd>arXiv</kbd>](https://arxiv.org/pdf/2012.05780.pdf) | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: ![Progress](https://progress-bar.dev/0/?title=done) |
 
 </details>
 
@@ -193,7 +196,6 @@
 | 
 
 </details>
-
 
 
 

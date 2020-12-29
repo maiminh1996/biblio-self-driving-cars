@@ -57,7 +57,13 @@
 | Contribution |  |
 | Key ideas |  | 
 | Pipeline |  |
+| Network |  |
+| Loss |  |
 | Params + Time |  | 
+| Tech |  |
 | Limitations |  |
 | TOTEST |  |
+
+9. # What is progress-bar.dev?
+![Progress](https://progress-bar.dev/0/?title=done)
 
