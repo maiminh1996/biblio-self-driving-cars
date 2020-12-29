@@ -39,10 +39,11 @@
 
   | Ref | Highlight description |
   | -- | -- | 
-  | KITTI </br>(3D OD) </br> [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples [[more]](dataset/kitti.md) | <!-- -->
-  | Weather augmented </br>[<kbd>ICCV 19</kbd>](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes | <!-- -->
-  | Seeing Through Fog </br>[<kbd>CVPR 20</kbd>](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [<kbd>ICCV 19</kbd>](https://github.com/gruberto/Gated2Depth) | <!-- -->
-  | Canadian Adverse Driving Conditions </br>[<kbd>arXiv 20</kbd>](https://arxiv.org/pdf/2001.10117.pdf) | ●  56,000 camera images, 7,000 LiDAR sweeps, </br> ● Real dataset: 75 scenes of 50-100 frames each </br> ● Adverse weather driving conditions, including snow | 
+  | KITTI (3D OD) [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples [[more]](dataset/kitti.md) | <!-- -->
+  | KITTI-Object-Depth (KOD) [<kbd>AAAI 20</kbd>](https://arxiv.org/pdf/1909.07701.pdf) | Collect the corresponding gth depth map (11 frame) for each image in KITTI (3D OD) training set [[more]](3d_od/foresee.md)| <!-- -->
+  | Weather augmented [<kbd>ICCV 19</kbd>](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes | <!-- -->
+  | Seeing Through Fog [<kbd>CVPR 20</kbd>](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [<kbd>ICCV 19</kbd>](https://github.com/gruberto/Gated2Depth) | <!-- -->
+  | Canadian Adverse Driving Conditions [<kbd>arXiv 20</kbd>](https://arxiv.org/pdf/2001.10117.pdf) | ●  56,000 camera images, 7,000 LiDAR sweeps, </br> ● Real dataset: 75 scenes of 50-100 frames each </br> ● Adverse weather driving conditions, including snow | 
 
 </details>
 
@@ -83,10 +84,10 @@
 ## Depth Estimation
 ### Evaluation metrics depth
 
-> **_Depth prediction (DP):_** takes only monocular/ stereo as input</br>
-> **_Depth completion (DC):_** takes depth sensor (ex: LiDAR, RADAR) as input component</br>
+> **_Depth prediction (DP):_** takes only monocular/ stereo as input  
+> **_Depth completion (DC):_** takes depth sensor (ex: LiDAR, RADAR) as input component
 
-> **_Metrics DP:_** Accu, SILog, sqErrorRel, absErrorRel, iRMSE, thresh δ</br>
+> **_Metrics DP:_** Accu, SILog, sqErrorRel, absErrorRel, iRMSE, thresh δ  
 > **_Metrics DC:_** Accu, iRMSE, iMAE, RMSE, MAE, thresh δ
 
 > **_How to calculate:_** [[more]](depth_estimation/evaluation.md)
@@ -194,65 +195,5 @@
 </details>
 
 
-<!--
-### Adverse Weather Dataset
-| Ref | Weather | Description | Task |
-| -- | -- | -- | -- | 
-| Weather augmented [[ICCV 2019]](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes |
-| Seeing Through Fog [[CVPR 2020]](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [[ICCV 2019]](https://github.com/gruberto/Gated2Depth) |
 
-
-
-### Simulation 
-| Ref | Weather | Description | Task |
-| -- | -- | -- | -- | 
-| Seeing Through Fog [[CVPR 2020]](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [[ICCV 2019]](https://github.com/gruberto/Gated2Depth) |
-
-
-
--->
-
-
-<!--
-1. quotes notes
-> **_Type:_**
-
-2. check box
-* [ ] unchecked # [checkbox:unchecked]
-* [x] checked   # [checkbox:checked]
-* [X] checked   # [checkbox:checked]
-
-3. A collapsible section with markdown
-<details>
-  <summary>Click to expand!</summary>
-  text
-</details>
-
-4. list
-<ul><li>item1</li><li>item2</li></ul>
-5. point boucle 
-● 
-➔
-
-
-6. 
-| Ref | Type | Data | Highlight description |
-| :-- | :--: | -- | -- | 
-| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
-
-7. <p align="center" vertical-align="middle"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>
-
-8. Teamplate method
-## Short Name 
-### [<kbd>conference</kbd> Paper name](link-to-paper)
-
-| Category | Description |
-| :--: | -- |
-| Type | | 
-| Contribution |  |
-| Key ideas |  | 
-| Pipeline |  |
-| Params + Time |  | 
-| Limitations |  |
-| TOTEST |  |
 

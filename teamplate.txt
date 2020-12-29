@@ -1,0 +1,63 @@
+
+<!--
+### Adverse Weather Dataset
+| Ref | Weather | Description | Task |
+| -- | -- | -- | -- | 
+| Weather augmented [[ICCV 2019]](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes |
+| Seeing Through Fog [[CVPR 2020]](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [[ICCV 2019]](https://github.com/gruberto/Gated2Depth) |
+
+
+
+### Simulation 
+| Ref | Weather | Description | Task |
+| -- | -- | -- | -- | 
+| Seeing Through Fog [[CVPR 2020]](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [[ICCV 2019]](https://github.com/gruberto/Gated2Depth) |
+
+
+
+-->
+
+
+<!--
+1. quotes notes
+> **_Type:_**
+
+2. check box
+* [ ] unchecked # [checkbox:unchecked]
+* [x] checked   # [checkbox:checked]
+* [X] checked   # [checkbox:checked]
+
+3. A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  text
+</details>
+
+4. list
+<ul><li>item1</li><li>item2</li></ul>
+5. point boucle 
+● 
+➔
+
+
+6. 
+| Ref | Type | Data | Highlight description |
+| :-- | :--: | -- | -- | 
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
+
+7. <p align="center" vertical-align="middle"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>
+
+8. Teamplate method
+## Short Name 
+### [<kbd>conference</kbd> Paper name](link-to-paper)
+
+| Category | Description |
+| :--: | -- |
+| Type | | 
+| Contribution |  |
+| Key ideas |  | 
+| Pipeline |  |
+| Params + Time |  | 
+| Limitations |  |
+| TOTEST |  |
+
