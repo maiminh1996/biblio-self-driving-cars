@@ -1,6 +1,6 @@
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="50"/><img src="doc/fire.png" alt="drawing" width="30"/></p>
 
-# Self-driving cars paper notes
+# Self-driving cars perception notes
 ## Contents
 
 1. [3D Object Detection](#3d-object-detection)
