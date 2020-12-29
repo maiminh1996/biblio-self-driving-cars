@@ -1,6 +1,6 @@
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="50"/><img src="doc/fire.png" alt="drawing" width="30"/></p>
 
-# Self-driving cars perception notes
+# <p align="center" vertical-align="middle">Self-driving cars perception notes</p>
 ## Contents
 
 1. [3D Object Detection](#3d-object-detection)
@@ -39,7 +39,7 @@
 
   | Ref | Highlight description |
   | -- | -- | 
-  | KITTI </br>(3D OD) </br> [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples </br> [[more]](dataset/kitti.md) | <!-- -->
+  | KITTI </br>(3D OD) </br> [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples [[more]](dataset/kitti.md) | <!-- -->
   | Weather augmented </br>[<kbd>ICCV 19</kbd>](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes | <!-- -->
   | Seeing Through Fog </br>[<kbd>CVPR 20</kbd>](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [<kbd>ICCV 19</kbd>](https://github.com/gruberto/Gated2Depth) | <!-- -->
   | Canadian Adverse Driving Conditions </br>[<kbd>arXiv 20</kbd>](https://arxiv.org/pdf/2001.10117.pdf) | ●  56,000 camera images, 7,000 LiDAR sweeps, </br> ● Real dataset: 75 scenes of 50-100 frames each </br> ● Adverse weather driving conditions, including snow | 
@@ -55,23 +55,23 @@
 
 | Ref | Type | Data | Highlight description |
 | :-- | :--: | :-- | :-- | 
-| <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/>Monocular<img src="doc/fire.png" alt="drawing" width="20"/> </p> |<p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> | <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> |<!-- -->
-| Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | M / sup | | ● Pipeline: </br> ● Contrib: convert depth into pseudo 3d point clouds|
+|  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
+| Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | M / sup | KITTI | ● Pipeline: Depth estimator ➔ convert into pseudo pcl ➔ LiDAR-based detector </br> ● Contrib: Convert depth into pseudo 3d point clouds [[more]](3d_od/pseudo_lidar.md) |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | Pseudo-LiDAR e2e </br>[<kbd>ICCV 19</kbd>](https://github.com/xinshuoweng/Mono3DPLiDAR) | M / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
-| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/>Binocular<img src="doc/fire.png" alt="drawing" width="20"/> </p> |<p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> | <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> |<!-- -->
+|  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
 | Pseudo-LiDAR V3 E2E </br> [<kbd>CVPR 20</kbd>](https://openaccess.thecvf.com/content_CVPR_2020/papers/Qian_End-to-End_Pseudo-LiDAR_for_Image-Based_3D_Object_Detection_CVPR_2020_paper.pdf) | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | CG-Stereo </br> [<kbd>arXiv 20</kbd>](https://arxiv.org/pdf/2003.05505.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | Pseudo-LiDAR ++</br> [<kbd>ICRL 21</kbd>](https://arxiv.org/pdf/1906.06310.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
-| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/>LiDAR<img src="doc/fire.png" alt="drawing" width="20"/> </p> |<p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> | <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> |<!-- -->
+|  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
 | PointRCNN | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
-| <p align="center"><img src="doc/fire.png" alt="drawing" width="20"/>Fusion<img src="doc/fire.png" alt="drawing" width="20"/> </p> |<p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>| <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> | <p align="center"> <img src="doc/fire.png" alt="drawing" width="20"/> </p> |<!-- -->
+|  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
 | Pseudo-LiDAR ++</br> [<kbd>ICRL 21</kbd>](https://arxiv.org/pdf/1906.06310.pdf) | S+L4 / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
@@ -213,7 +213,7 @@
 -->
 
 
-<!-- 
+<!--
 1. quotes notes
 > **_Type:_**
 
@@ -230,7 +230,9 @@
 
 4. list
 <ul><li>item1</li><li>item2</li></ul>
-5. point boucle ●
+5. point boucle 
+● 
+➔
 
 
 6. 
@@ -239,4 +241,18 @@
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 
 7. <p align="center" vertical-align="middle"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>
--->
+
+8. Teamplate method
+## Short Name 
+### [<kbd>conference</kbd> Paper name](link-to-paper)
+
+| Category | Description |
+| :--: | -- |
+| Type | | 
+| Contribution |  |
+| Key ideas |  | 
+| Pipeline |  |
+| Params + Time |  | 
+| Limitations |  |
+| TOTEST |  |
+

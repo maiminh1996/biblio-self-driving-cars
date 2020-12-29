@@ -1,9 +1,12 @@
-### Overview
+## KITTI dataset
+### [<kbd>CVPR 12</kbd> Are we ready for Autonomous Driving?The KITTI Vision Benchmark Suite](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf)
+### [<kbd>IJRR 13</kbd> Vision meets Robotics: The KITTI Dataset](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf)
+
 | Category | Description |
 | :--: | -- |
-| **KITTI** | one of the most used datasets in the driving context |
+| Overall impression | one of the most used datasets in the driving context |
 | Inputs | stereo RGB images, LiDAR pcls and GPS coordinates, all synchronized in time | 
-| Scenes | 56 scenes well-structured highways, complex urban areas and narrow countryside roads ("city", "residential" & "road) categories of the raw data. Splitted into 28 for training and 28 for testing by Eigen et al [[NIPS14]](https://arxiv.org/pdf/1406.2283.pdf) |
+| Scenes | 56 scenes well-structured highways, complex urban areas and narrow countryside roads ("city", "residential" & "road) categories of the raw data. Splitted into 28 for training and 28 for testing by Eigen et al [<kbd>NIPS 2014</kbd>](https://arxiv.org/pdf/1406.2283.pdf) |
 | Condition | lighting conditions: all the measurements were obtained by the same set of sensors during daytimeand mostly under sunny conditions | 
 | Tasks | stereo matching, visual odometry, 3D tracking and 3D object detection </br> ● Object detection dataset: 7481 training & 7518 test frames, which are provided with sensor calibration information and annotated 3D boxes around objects of interest. Naturally we have mask label for the points inside the bbox|
 | Gth | ● 3D bbox annotations are categorized in “easy, moderate & hard” cases, according to object size, occlusion & truncation levels |
@@ -20,10 +23,12 @@
 <!-- TEAMPLATE DATASET-->
 <!-- 
 
-### Overview
+## NAME
+### [<kbd>---</kbd> ---]()
+
 | Category | Description |
 | :--: | -- |
-| **NAME** |  |
+| Overall impression |  |
 | Inputs |  | 
 | Scenes |  |
 | Condition |  | 
