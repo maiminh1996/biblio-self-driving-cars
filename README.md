@@ -3,23 +3,23 @@
 # <p align="center" vertical-align="middle">Self-driving cars perception notes</p>
 ## Contents
 
-- [1. 3D Object Detection](#1.-3d-object-detection)
-	- [1A. Evaluation metrics](#1a.-evaluation-metrics)
-	- [1B. Datasets](#1b.-datasets)
-	- [1C. Approaches](#1c.-Approaches)
-- [2. Depth Estimation](#2.-depth-estimation) 
-	- [2A. Evaluation metrics](#2a.-evaluation-metrics)
-	- [2B. Datasets](#2b.-datasets)
-	- [2C. Approaches](#2c.-Approaches)
-- [3. Segmentation](#3.-segmentation)
-	+ [3A. Evaluation metrics](#3a.-evaluation-metrics)
-	+ [3B. Datasets](#3b.-datasets)
-	+ [3C. Approaches](#3c.-Approaches)
-- [4. 2D Object Detection](#4.-2d-object-detection)
-	- [4A. Evaluation metrics](#4a.-evaluation-metrics)
-	- [4B. Datasets](#4b.-datasets)
-	- [4C. Approaches](#4c.-Approaches)
-- [5. Sensors](#5.-sensors)
+- [1. 3D Object Detection](#1-3d-object-detection)
+	- [1A. Evaluation metrics](#1a-evaluation-metrics)
+	- [1B. Datasets](#1b-datasets)
+	- [1C. Approaches](#1c-Approaches)
+- [2. Depth Estimation](#2-depth-estimation) 
+	- [2A. Evaluation metrics](#2a-evaluation-metrics)
+	- [2B. Datasets](#2b-datasets)
+	- [2C. Approaches](#2c-Approaches)
+- [3. Segmentation](#3-segmentation)
+	+ [3A. Evaluation metrics](#3a-evaluation-metrics)
+	+ [3B. Datasets](#3b-datasets)
+	+ [3C. Approaches](#3c-Approaches)
+- [4. 2D Object Detection](#4-2d-object-detection)
+	- [4A. Evaluation metrics](#4a-evaluation-metrics)
+	- [4B. Datasets](#4b-datasets)
+	- [4C. Approaches](#4c-Approaches)
+- [5. Sensors](#5-sensors)
 
 > **_Reading & Writting process bar ![Progress](https://progress-bar.dev/50/?title=done)_**
 
@@ -29,14 +29,14 @@
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## 1. 3D Object Detection
-### 1A. Evaluation metrics
+## 1 3D Object Detection
+### 1A Evaluation metrics
 
 > **_Metrics:_**  AP 3D, AP BEV
 
 > **_How to calculate:_** [[more]](3d_od/evaluation.md)
 
-### 1B. Datasets
+### 1B Datasets
 
 > **_How to obtain 3D bounding box:_**
 
@@ -54,7 +54,7 @@
 </details>
 
 
-### 1C. Approaches
+### 1C Approaches
 > **_Type 1:_** monocular (M), stereo (S), LiDAR 64 beams (L), LiDAR 4 beams (L4), RADAR (R)</br> 
 > **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
 
@@ -92,8 +92,8 @@
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## 2. Depth Estimation
-### 2A. Evaluation metrics
+## 2 Depth Estimation
+### 2A Evaluation metrics
 
 > **_Depth prediction (DP):_** takes only monocular/ stereo as input  
 > **_Depth completion (DC):_** takes depth sensor (ex: LiDAR, RADAR) as input component
@@ -105,7 +105,7 @@
 
 
 
-### 2B. Datasets
+### 2B Datasets
 > **_How to obtain depth ground truth:_** 
 
 <details>
@@ -119,7 +119,7 @@
 
 </details>
 
-### 2C. Approaches
+### 2C Approaches
 
 > **_Type 1:_** monocular (M), stereo (S), LiDAR (L), RADAR (R)</br> 
 > **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
@@ -143,13 +143,13 @@
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## 3. Segmentation
-### 3A. Evaluation metrics
+## 3 Segmentation
+### 3A Evaluation metrics
 
 > **_Metrics:_** 
 
 > **_How to calculate:_** [[more]]()
-### 3B. Datasets
+### 3B Datasets
 
 <details>
   <summary>Click to expand!</summary>
@@ -158,7 +158,7 @@
 
 </details>
 
-### 3C. Approaches
+### 3C Approaches
 <details>
   <summary>Click to expand!</summary>
 
@@ -173,13 +173,13 @@
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## 4. 2D Object Detection
-### 4A. Evaluation metrics
+## 4 2D Object Detection
+### 4A Evaluation metrics
 
 > **_Metrics:_**  AP 2D
 
 > **_How to calculate:_** [[more]](3d_od/evaluation.md)
-### 4B. Datasets
+### 4B Datasets
 
 <details>
   <summary>Click to expand!</summary>
@@ -188,7 +188,7 @@
 
 </details>
 
-### 4C. Approaches
+### 4C Approaches
 <details>
   <summary>Click to expand!</summary>
 
@@ -204,7 +204,7 @@
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## 5. Sensors
+## 5 Sensors
 
 > **_LiDAR:_** [awesome-LiDAR](https://github.com/szenergy/awesome-lidar#datasets), [awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis), [awesome-point-cloud-deep-learning](https://github.com/dashidhy/awesome-point-cloud-deep-learning)
 
