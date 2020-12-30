@@ -21,7 +21,7 @@
 	- [4C. Approaches](#4c-Approaches)
 - [5. Sensors](#5-sensors)
 
-> **_Reading & Writting process bar ![Progress](https://progress-bar.dev/50/?title=done)_**
+> **_Click on the "Reading & Writting" process bar to see more details of each paper [![Progress](https://progress-bar.dev/50/?title=done)](README.md)_**
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
@@ -34,7 +34,9 @@
 
 > **_Metrics:_**  AP 3D, AP BEV
 
-> **_How to calculate:_** [[more]](3d_od/evaluation.md)
+> **_How to calculate:_** [![Progress](https://progress-bar.dev/0/?title=done)](3d_od/evaluation.md)
+
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
 ### 1B Datasets
 
@@ -46,13 +48,13 @@
   | Ref | Highlight description |
   | -- | -- | 
   | KITTI (3D OD) [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples [![Progress](https://progress-bar.dev/100/?title=done)](dataset/kitti.md) | <!-- -->
-  | KITTI-Object-Depth (KOD) [<kbd>AAAI 20</kbd>](https://arxiv.org/pdf/1909.07701.pdf) | Collect the corresponding gth depth map (11 frame) for each image in KITTI (3D OD) training set ![Progress](https://progress-bar.dev/0/?title=done) [[more]](3d_od/foresee.md)| <!-- -->
+  | KITTI-Object-Depth (KOD) [<kbd>AAAI 20</kbd>](https://arxiv.org/pdf/1909.07701.pdf) | Collect the corresponding gth depth map (11 frame) for each image in KITTI (3D OD) training set [![Progress](https://progress-bar.dev/0/?title=done)](3d_od/foresee.md)| <!-- -->
   | Weather augmented [<kbd>ICCV 19</kbd>](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes | <!-- -->
   | Seeing Through Fog [<kbd>CVPR 20</kbd>](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [<kbd>ICCV 19</kbd>](https://github.com/gruberto/Gated2Depth) | <!-- -->
   | Canadian Adverse Driving Conditions [<kbd>arXiv 20</kbd>](https://arxiv.org/pdf/2001.10117.pdf) | ●  56000 camera images, 7000 LiDAR sweeps, </br> ● Real dataset: 75 scenes of 50-100 frames each </br> ● Adverse weather driving conditions, including snow | 
 
 </details>
-
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
 ### 1C Approaches
 > **_Type 1:_** monocular (M), stereo (S), LiDAR 64 beams (L), LiDAR 4 beams (L4), RADAR (R)</br> 
@@ -64,7 +66,7 @@
 | Ref | Type | Data | Highlight description |
 | :-- | :--: | :-- | :-- | 
 |  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
-| Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | M / sup | KITTI | ● Pipeline: Depth estimator ➔ convert into pseudo pcl ➔ LiDAR-based detector </br> ● Contrib: Convert depth into pseudo 3d point clouds ![Progress](https://progress-bar.dev/100/?title=done) [[more]](3d_od/pseudo_lidar.md) |
+| Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | M / sup | KITTI | ● Pipeline: Depth estimator ➔ convert into pseudo pcl ➔ LiDAR-based detector </br> ● Contrib: Convert depth into pseudo 3d point clouds [![Progress](https://progress-bar.dev/100/?title=done)](3d_od/pseudo_lidar.md) |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | Pseudo-LiDAR e2e </br>[<kbd>ICCV 19</kbd>](https://github.com/xinshuoweng/Mono3DPLiDAR) | M / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
@@ -101,9 +103,9 @@
 > **_Metrics DP:_** Accu, SILog, sqErrorRel, absErrorRel, iRMSE, thresh δ  
 > **_Metrics DC:_** Accu, iRMSE, iMAE, RMSE, MAE, thresh δ
 
-> **_How to calculate:_** [[more]](depth_estimation/evaluation.md)
+> **_How to calculate:_** [![Progress](https://progress-bar.dev/50/?title=done)](depth_estimation/evaluation.md)
 
-
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
 ### 2B Datasets
 > **_How to obtain depth ground truth:_** 
@@ -113,11 +115,12 @@
 
 | Ref | Highlight description |
 | -- | -- | 
-| KITTI (stereo) </br> [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Gth: projected LiDAR 64 beams pose for 11 odometry sequences </br> ● the 200 training images of KITTI stereo 2015 **overlap** with thevalidation images of KITTI object detection [[more]](dataset/kitti.md)| <!-- -->
-| Scene Flow </br> [<kbd>CVPR 16</kbd>](https://openaccess.thecvf.com/content_cvpr_2016/papers/Mayer_A_Large_Dataset_CVPR_2016_paper.pdf) | ● Stereo (960x540) </br> ● Synthetic dataset: 35454 training & 4370 testing images </br> ● Gth: dense and elaborate disparity maps [[more]](dataset/sceneflow.md) | <!-- -->
-| Cityscapes </br> [<kbd>CVPR 16</kbd>](https://www.cityscapes-dataset.com/citation/) | ● Stereo (1024×2048) </br> ● Gth: 22,973 stereo image pairs training  </br> ● Real dataset: 50 cities forseveral months </br> ● 5000 images with fine annotations and 20000 images  with coarse annotations [[more]](dataset/cityscapes.md)| <!-- -->
+| KITTI (stereo) </br> [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Gth: projected LiDAR 64 beams pose for 11 odometry sequences </br> ● the 200 training images of KITTI stereo 2015 **overlap** with the validation images of KITTI OD [![Progress](https://progress-bar.dev/100/?title=done)](dataset/kitti.md)| <!-- -->
+| Scene Flow </br> [<kbd>CVPR 16</kbd>](https://openaccess.thecvf.com/content_cvpr_2016/papers/Mayer_A_Large_Dataset_CVPR_2016_paper.pdf) | ● Stereo (960x540) </br> ● Synthetic dataset: 35454 training & 4370 testing images </br> ● Gth: dense and elaborate disparity maps [![Progress](https://progress-bar.dev/30/?title=done)](dataset/sceneflow.md) | <!-- -->
+| Cityscapes </br> [<kbd>CVPR 16</kbd>](https://www.cityscapes-dataset.com/citation/) | ● Stereo (1024×2048) </br> ● Gth: 22,973 stereo image pairs training  </br> ● Real dataset: 50 cities forseveral months </br> ● 5000 images with fine annotations and 20000 images  with coarse annotations [![Progress](https://progress-bar.dev/20/?title=done)](dataset/cityscapes.md)| <!-- -->
 
 </details>
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
 ### 2C Approaches
 
@@ -148,13 +151,13 @@
 
 > **_Metrics:_** 
 
-> **_How to calculate:_** [[more]]()
+> **_How to calculate:_** [![Progress](https://progress-bar.dev/0/?title=done)]()
 ### 3B Datasets
 
 <details>
   <summary>Click to expand!</summary>
 
-  text
+  ![Progress](https://progress-bar.dev/0/?title=done)
 
 </details>
 
@@ -162,7 +165,7 @@
 <details>
   <summary>Click to expand!</summary>
 
-  Text here
+  ![Progress](https://progress-bar.dev/0/?title=done)
 
 </details>
 
@@ -178,13 +181,13 @@
 
 > **_Metrics:_**  AP 2D
 
-> **_How to calculate:_** [[more]](3d_od/evaluation.md)
+> **_How to calculate:_** [![Progress](https://progress-bar.dev/0/?title=done)](3d_od/evaluation.md)
 ### 4B Datasets
 
 <details>
   <summary>Click to expand!</summary>
 
-  text
+  ![Progress](https://progress-bar.dev/0/?title=done)
 
 </details>
 
@@ -194,7 +197,7 @@
 
 | Ref | Type | Data | Highlight description | 
 | -- | -- | -- | -- | 
-| OneNet </br> [<kbd>arXiv</kbd>](https://arxiv.org/pdf/2012.05780.pdf) | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: ![Progress](https://progress-bar.dev/0/?title=done) |
+| OneNet </br> [<kbd>arXiv</kbd>](https://arxiv.org/pdf/2012.05780.pdf) | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: [![Progress](https://progress-bar.dev/0/?title=done)](2d_od/onenet.md) |
 
 </details>
 
