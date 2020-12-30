@@ -21,8 +21,11 @@
 	- [4C. Approaches](#4c-Approaches)
 - [5. Sensors](#5-sensors)
 
-> **_Click on the "Reading & Writting" process bar to see more details of each paper [![Progress](https://progress-bar.dev/50/?title=done)](README.md)_**  
+> **_Click on [![Progress](https://progress-bar.dev/50/?title=done)](README.md) which represents the "Reading & Writting" process of each paper to see more details_**  
 > **_Synthetic: [Loss function](loss_problem.md), [Network problem](network_problem.md), [Depth limit](depth_estimation/depth_limit.md)_**
+
+> **_Update: in the process of adding all the articles i've read before 2021_** ~_~  
+> **_Here is [time-list paper](time_list_paper.md)_**
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
