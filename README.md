@@ -21,7 +21,8 @@
 	- [4C. Approaches](#4c-Approaches)
 - [5. Sensors](#5-sensors)
 
-> **_Click on the "Reading & Writting" process bar to see more details of each paper [![Progress](https://progress-bar.dev/50/?title=done)](README.md)_**
+> **_Click on the "Reading & Writting" process bar to see more details of each paper [![Progress](https://progress-bar.dev/50/?title=done)](README.md)_**  
+> **_Synthetic: [Loss function](loss_problem.md), [Network problem](network_problem.md), [Depth limit](depth_estimation/depth_limit.md)_**
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
@@ -49,7 +50,7 @@
   | -- | -- | 
   | KITTI (3D OD) [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples [![Progress](https://progress-bar.dev/100/?title=done)](dataset/kitti.md) | <!-- -->
   | KITTI-Object-Depth (KOD) [<kbd>AAAI 20</kbd>](https://arxiv.org/pdf/1909.07701.pdf) | Collect the corresponding gth depth map (11 frame) for each image in KITTI (3D OD) training set [![Progress](https://progress-bar.dev/0/?title=done)](3d_od/foresee.md)| <!-- -->
-  | Weather augmented [<kbd>ICCV 19</kbd>](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes | <!-- -->
+  | Weather augmented [<kbd>ICCV 19</kbd>](https://team.inria.fr/rits/computer-vision/weather-augment/) | ● Weather augmentation of Kitti & Cityscapes  </br>●  For each sequence, 7+ rain levels (from dizzle to storm conditions) & 7 fog intensities (from light to dense fog) [![Progress](https://progress-bar.dev/0/?title=done)](dataset/weather_augmented.md) | <!-- -->
   | Seeing Through Fog [<kbd>CVPR 20</kbd>](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [<kbd>ICCV 19</kbd>](https://github.com/gruberto/Gated2Depth) | <!-- -->
   | Canadian Adverse Driving Conditions [<kbd>arXiv 20</kbd>](https://arxiv.org/pdf/2001.10117.pdf) | ●  56000 camera images, 7000 LiDAR sweeps, </br> ● Real dataset: 75 scenes of 50-100 frames each </br> ● Adverse weather driving conditions, including snow | 
 
@@ -64,7 +65,7 @@
   <summary>Click to expand!</summary>
 
 | Ref | Type | Data | Highlight description |
-| :-- | :--: | :-- | :-- | 
+| -- | :--: | :-- | -- | 
 |  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
 | Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | M / sup | KITTI | ● Pipeline: Depth estimator ➔ convert into pseudo pcl ➔ LiDAR-based detector </br> ● Contrib: Convert depth into pseudo 3d point clouds [![Progress](https://progress-bar.dev/100/?title=done)](3d_od/pseudo_lidar.md) |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
@@ -131,7 +132,7 @@
   <summary>Click to expand!</summary>
 
 | Ref | Type | Data | Highlight description |
-| :-- | :--: | -- | -- | 
+| -- | :--: | :--: | -- | 
 | Eigen et al </br> [<kbd>NIPS 14</kbd>](https://arxiv.org/pdf/1406.2283.pdf) | M / sup | KITTI | ● Loss: [L2 loss](loss_problem.md)|
 | DORN </br> [<kbd>CVPR 18</kbd>](https://openaccess.thecvf.com/content_cvpr_2018/papers/Fu_Deep_Ordinal_Regression_CVPR_2018_paper.pdf) | M / sup | KITTI | |  <!-- -->| Discretized depth bins > direct regression </br> binary classification 80 bins (Pixels with distance>80m) [[more]](https://github.com/patrick-llgc/Learning-Deep-Learning/blob/master/paper_notes/dorn.md) |
 | FAL </br> [<kbd>NIPS 20</kbd>](https://proceedings.neurips.cc/paper/2020/file/951124d4a093eeae83d9726a20295498-Paper.pdf) | M / self-sup | KITTI | | Occlusion-free reconstruction loss |  <!-- -->
