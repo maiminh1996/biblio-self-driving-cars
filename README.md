@@ -3,36 +3,40 @@
 # <p align="center" vertical-align="middle">Self-driving cars perception notes</p>
 ## Contents
 
-1. [3D Object Detection](#3d-object-detection)
-	+ [Evaluation metrics](#evaluation-metrics-3d-od)
-	+ [Datasets](#datasets-3d-od)
-	+ [Approaches](#Approaches-3d-od)
-2. [Depth Estimation](#depth-estimation) 
-	+ [Evaluation metrics](#evaluation-metrics-depth)
-	+ [Datasets](#datasets-depth)
-	+ [Approaches](#Approaches-depth)
-3. [Segmentation](#segmentation)
-	+ [Evaluation metrics](#evaluation-metrics-seg)
-	+ [Datasets](#datasets-seg)
-	+ [Approaches](#Approaches-seg)
-4. [2D Object Detection](#2d-object-detection)
-	+ [Evaluation metrics](#evaluation-metrics-2d-od)
-	+ [Datasets](#datasets-2d-od)
-	+ [Approaches](#Approaches-2d-od)
-5. [Sensors](#sensors)
+- [1. 3D Object Detection](#1.-3d-object-detection)
+	- [1A. Evaluation metrics](#1a.-evaluation-metrics)
+	- [1B. Datasets](#1b.-datasets)
+	- [1C. Approaches](#1c.-Approaches)
+- [2. Depth Estimation](#2.-depth-estimation) 
+	- [2A. Evaluation metrics](#2a.-evaluation-metrics)
+	- [2B. Datasets](#2b.-datasets)
+	- [2C. Approaches](#2c.-Approaches)
+- [3. Segmentation](#3.-segmentation)
+	+ [3A. Evaluation metrics](#3a.-evaluation-metrics)
+	+ [3B. Datasets](#3b.-datasets)
+	+ [3C. Approaches](#3c.-Approaches)
+- [4. 2D Object Detection](#4.-2d-object-detection)
+	- [4A. Evaluation metrics](#4a.-evaluation-metrics)
+	- [4B. Datasets](#4b.-datasets)
+	- [4C. Approaches](#4c.-Approaches)
+- [5. Sensors](#5.-sensors)
 
 > **_Reading & Writting process bar ![Progress](https://progress-bar.dev/50/?title=done)_**
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## 3D Object Detection
-### Evaluation metrics 3D OD
+## 1. 3D Object Detection
+### 1A. Evaluation metrics
 
 > **_Metrics:_**  AP 3D, AP BEV
 
 > **_How to calculate:_** [[more]](3d_od/evaluation.md)
 
-### Datasets 3D OD
+### 1B. Datasets
 
 > **_How to obtain 3D bounding box:_**
 
@@ -41,7 +45,7 @@
 
   | Ref | Highlight description |
   | -- | -- | 
-  | KITTI (3D OD) [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples ![Progress](https://progress-bar.dev/100/?title=done) [[more]](dataset/kitti.md) | <!-- -->
+  | KITTI (3D OD) [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams </br> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples [![Progress](https://progress-bar.dev/100/?title=done)](dataset/kitti.md) | <!-- -->
   | KITTI-Object-Depth (KOD) [<kbd>AAAI 20</kbd>](https://arxiv.org/pdf/1909.07701.pdf) | Collect the corresponding gth depth map (11 frame) for each image in KITTI (3D OD) training set ![Progress](https://progress-bar.dev/0/?title=done) [[more]](3d_od/foresee.md)| <!-- -->
   | Weather augmented [<kbd>ICCV 19</kbd>](https://team.inria.fr/rits/computer-vision/weather-augment/) | | Weather Kitti and Weather Cityscapes | <!-- -->
   | Seeing Through Fog [<kbd>CVPR 20</kbd>](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) [<kbd>ICCV 19</kbd>](https://github.com/gruberto/Gated2Depth) | <!-- -->
@@ -50,7 +54,7 @@
 </details>
 
 
-### Approaches 3D OD
+### 1C. Approaches
 > **_Type 1:_** monocular (M), stereo (S), LiDAR 64 beams (L), LiDAR 4 beams (L4), RADAR (R)</br> 
 > **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
 
@@ -83,9 +87,13 @@
 </details>
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## Depth Estimation
-### Evaluation metrics depth
+## 2. Depth Estimation
+### 2A. Evaluation metrics
 
 > **_Depth prediction (DP):_** takes only monocular/ stereo as input  
 > **_Depth completion (DC):_** takes depth sensor (ex: LiDAR, RADAR) as input component
@@ -97,7 +105,7 @@
 
 
 
-### Datasets depth
+### 2B. Datasets
 > **_How to obtain depth ground truth:_** 
 
 <details>
@@ -111,7 +119,7 @@
 
 </details>
 
-### Approaches depth
+### 2C. Approaches
 
 > **_Type 1:_** monocular (M), stereo (S), LiDAR (L), RADAR (R)</br> 
 > **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
@@ -130,14 +138,18 @@
 
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## Segmentation
-### Evaluation metrics seg
+## 3. Segmentation
+### 3A. Evaluation metrics
 
 > **_Metrics:_** 
 
 > **_How to calculate:_** [[more]]()
-### Datasets seg
+### 3B. Datasets
 
 <details>
   <summary>Click to expand!</summary>
@@ -146,7 +158,7 @@
 
 </details>
 
-### Approaches seg
+### 3C. Approaches
 <details>
   <summary>Click to expand!</summary>
 
@@ -156,14 +168,18 @@
 
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## 2D Object Detection
-### Evaluation metrics 2D OD
+## 4. 2D Object Detection
+### 4A. Evaluation metrics
 
 > **_Metrics:_**  AP 2D
 
 > **_How to calculate:_** [[more]](3d_od/evaluation.md)
-### Datasets 2D OD
+### 4B. Datasets
 
 <details>
   <summary>Click to expand!</summary>
@@ -172,7 +188,7 @@
 
 </details>
 
-### Approaches 2D OD
+### 4C. Approaches
 <details>
   <summary>Click to expand!</summary>
 
@@ -183,8 +199,12 @@
 </details>
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
-## Sensors
+## 5. Sensors
 
 > **_LiDAR:_** [awesome-LiDAR](https://github.com/szenergy/awesome-lidar#datasets), [awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis), [awesome-point-cloud-deep-learning](https://github.com/dashidhy/awesome-point-cloud-deep-learning)
 
