@@ -3,7 +3,7 @@ logo: https://maiminh1996.github.io/minh.png
 # description: Ph.D student in Computer Science
 theme: jekyll-theme-minimal
 
-# --- Footer social media links --- #
+# --- Footer social media links --- # not work
 social-network-links:
   email: "someone@example.com"
   facebook: deanattali
@@ -11,6 +11,8 @@ social-network-links:
   twitter: daattali
   patreon: DeanAttali
   youtube: c/daattali
+
+date_format: "%B %-d, %Y"
 
 plugins:
   - jekyll-relative-links
