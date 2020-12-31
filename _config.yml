@@ -1,3 +1,7 @@
+avatar: https://maiminh1996.github.io/minh.png
+name: Nguyen Anh Minh MAI
+description: PhD student in Computer Science
+
 plugins:
   - jekyll-relative-links
 relative_links:
@@ -14,6 +18,9 @@ include:
   - PULL_REQUEST_TEMPLATE.md
 theme: jekyll-theme-minimal
 
+
+
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
