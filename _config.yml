@@ -3,8 +3,14 @@ logo: https://maiminh1996.github.io/minh.png
 # description: Ph.D student in Computer Science
 theme: jekyll-theme-minimal
 
-# Your name to show in the footer
-author: Some Person
+# --- Footer social media links --- #
+social-network-links:
+  email: "someone@example.com"
+  facebook: deanattali
+  github: daattali
+  twitter: daattali
+  patreon: DeanAttali
+  youtube: c/daattali
 
 plugins:
   - jekyll-relative-links
