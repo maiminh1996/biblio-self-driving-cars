@@ -36,9 +36,9 @@
 ## 1 3D Object Detection
 ### 1A Evaluation metrics
 
-> **_Metrics:_**  AP 3D, AP BEV
+> **_Metrics:_**  AP 3D, AP 2D, AP BEV, AOS
 
-> **_How to calculate:_** [![Progress](https://progress-bar.dev/0/?title=done)](3d_od/evaluation.md)
+> **_How to calculate:_** [![Progress](https://progress-bar.dev/10/?title=done)](3d_od/evaluation.md)
 
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
@@ -77,16 +77,16 @@
 |  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
 | Pseudo-LiDAR V3 E2E </br> [<kbd>CVPR 20</kbd>](https://openaccess.thecvf.com/content_CVPR_2020/papers/Qian_End-to-End_Pseudo-LiDAR_for_Image-Based_3D_Object_Detection_CVPR_2020_paper.pdf) | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | CG-Stereo </br> [<kbd>arXiv 20</kbd>](https://arxiv.org/pdf/2003.05505.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
-| Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
-| Pseudo-LiDAR ++</br> [<kbd>ICRL 21</kbd>](https://arxiv.org/pdf/1906.06310.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
+| Pseudo-LiDAR </br> [<kbd>CVPR 19</kbd>](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf) | S / sup | | [![Progress](https://progress-bar.dev/100/?title=done)](3d_od/pseudo_lidar.md) |
+| Pseudo-LiDAR ++</br> [<kbd>ICRL 20</kbd>](https://arxiv.org/pdf/1906.06310.pdf) | S / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: [![Progress](https://progress-bar.dev/0/?title=done)](3d_od/pseudo_lidar++.md) |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
-| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
+| | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib:  |
 |  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
 | PointRCNN | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 |  | <img src="doc/fire.png" alt="drawing" width="20"/>| <img src="doc/fire.png" alt="drawing" width="20"/> |  |<!-- -->
-| Pseudo-LiDAR ++</br> [<kbd>ICRL 21</kbd>](https://arxiv.org/pdf/1906.06310.pdf) | S+L4 / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
+| Pseudo-LiDAR ++</br> [<kbd>ICRL 20</kbd>](https://arxiv.org/pdf/1906.06310.pdf) | S+L4 / sup | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: [![Progress](https://progress-bar.dev/0/?title=done)](3d_od/pseudo_lidar++.md) |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 | | | | ● Net: </br>● Pipeline: </br>● Loss: </br> ● Contrib: |
 
@@ -169,7 +169,11 @@
 <details>
   <summary>Click to expand!</summary>
 
-  ![Progress](https://progress-bar.dev/0/?title=done)
+| Ref | Type | Data | Highlight description | 
+| -- | -- | -- | -- | 
+| UNet | | | [![Progress](https://progress-bar.dev/0/?title=done)](seg/unet.md) |
+
+  
 
 </details>
 
@@ -181,6 +185,7 @@
 <!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 
 ## 4 2D Object Detection
+>**_[awesome-tiny-object-detection](https://github.com/kuanhungchen/awesome-tiny-object-detection), [awesome-object-proposals](https://github.com/caocuong0306/awesome-object-proposals)_**
 ### 4A Evaluation metrics
 
 > **_Metrics:_**  AP 2D
@@ -218,9 +223,30 @@
 <details>
   <summary>Click to expand!</summary>
 
-| Comp | Camera | LiDAR | RADAR |
+### Comparison
+| Comparison | Camera | LiDAR | RADAR |
 | -- | -- | -- | -- | 
 | 
+
+### Andrej Karpathy - AI for Full-Self Driving at Tesla
+[Andrej Karpathy - AI for Full-Self Driving at Tesla](https://www.youtube.com/watch?v=hx7BXih7zx8&feature=youtu.be)
+
+[Tesla autopilotAI](https://www.tesla.com/autopilotAI)
+
+Takeaways's Lei Xin:
+1. What is Tesla Autopilot 1:20
+2. **Tesla's methods are heavily based on computer vision rather than lidar** 5:25
+3. Neural networks in production 6:55
+4. Receive training images for tricky cases from the fleet 8:35
+5. For testing, it is not enough to just rely on loss function and mean accuracy of test set 13:00
+6. HydraNet contains 48 networks with shared backbone, 1,000 distinct predictions (Number of output tensors) and it takes 70,000 GPU hours to train 14:12
+7. Neural networks for full self-driving 16:54
+8. **Get depth estimation from images directly by using self-supervised techniques** 22:54, predict the depth, drive to it and measure the real distance
+9. other uses of **self-supervised learning** 25:24
+10. Q&A 26:50
+
+### Other sources
+> **_[Learning-Deep-Learning](https://github.com/patrick-llgc/Learning-Deep-Learning)_**
 
 </details>
 
