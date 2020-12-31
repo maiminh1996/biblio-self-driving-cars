@@ -1,8 +1,6 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Nguyen Anh Minh MAI
+logo: https://maiminh1996.github.io/minh.png
+description: Ph.D student in Computer Science
 theme: jekyll-theme-minimal
 
 plugins:
