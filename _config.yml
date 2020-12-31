@@ -1,7 +1,10 @@
-title: Nguyen Anh Minh MAI
+# title: Nguyen Anh Minh MAI
 logo: https://maiminh1996.github.io/minh.png
-description: Ph.D student in Computer Science
+# description: Ph.D student in Computer Science
 theme: jekyll-theme-minimal
+
+# Your name to show in the footer
+author: Some Person
 
 plugins:
   - jekyll-relative-links
