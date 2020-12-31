@@ -224,9 +224,9 @@
   <summary>Click to expand!</summary>
 
 ### Comparison
-| Comparison | Camera | LiDAR | RADAR |
-| -- | -- | -- | -- | 
-| 
+ Comparison | Camera | LiDAR | RADAR 
+ -- | -- | -- | -- 
+test1 | | | test2
 
 ### Andrej Karpathy - AI for Full-Self Driving at Tesla
 [Andrej Karpathy - AI for Full-Self Driving at Tesla](https://www.youtube.com/watch?v=hx7BXih7zx8&feature=youtu.be)
