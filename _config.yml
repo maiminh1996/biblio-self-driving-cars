@@ -12,8 +12,3 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
-<<<<<<< HEAD
-=======
-
-theme: jekyll-theme-minimal
->>>>>>> 4ea254bc842cdc568783cd100a4b70a93d245b23
