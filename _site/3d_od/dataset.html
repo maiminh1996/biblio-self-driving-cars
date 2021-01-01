@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>3D Object Detection/ Datasets | biblio-self-driving-cars</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="3D Object Detection/ Datasets" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
+<meta property="og:description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
+<link rel="canonical" href="http://localhost:4000/3d_od/dataset.html" />
+<meta property="og:url" content="http://localhost:4000/3d_od/dataset.html" />
+<meta property="og:site_name" content="biblio-self-driving-cars" />
+<script type="application/ld+json">
+{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/3d_od/dataset.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"3D Object Detection/ Datasets","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=11dfbf4cc6275fc1b5d027f7ffaa8884b2c10115">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">biblio-self-driving-cars</a></h1>
+        
+        
+          <img src="https://maiminh1996.github.io/minh.png" alt="Logo" />
+        
+
+        <p>2D/ 3D object detection, segmentation, depth estimation for self-driving car</p>
+
+        
+        <p class="view"><a href="https://github.com/maiminh1996/biblio-self-driving-cars">View the Project on GitHub <small>maiminh1996/biblio-self-driving-cars</small></a></p>
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h2 id="3d-object-detection-datasets">3D Object Detection/ Datasets</h2>
+
+<blockquote>
+  <p><strong><em>How to obtain 3D bounding box:</em></strong></p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ref</th>
+      <th>Highlight description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KITTI (3D OD) <a href="http://www.cvlibs.net/publications/Geiger2012CVPR.pdf"><kbd>CVPR 12</kbd></a> <a href="http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf"><kbd>IJRR 13</kbd></a></td>
+      <td>● Stereo (1224×368) + LiDAR 64 beams <br /> ● Real dataset: 7481 training (splitted as 3DOP <a href="https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf"><kbd>NIPS 15</kbd></a> into 3712 training &amp; 3769 validation) &amp; 7518 test samples <a href="/dataset/kitti.html"><img src="../doc/100.png" width="95" /></a> <!-- --></td>
+    </tr>
+    <tr>
+      <td>KITTI-Object-Depth (KOD) <a href="https://arxiv.org/pdf/1909.07701.pdf"><kbd>AAAI 20</kbd></a></td>
+      <td>Collect the corresponding gth depth map (11 frame) for each image in KITTI (3D OD) training set <a href="/3d_od/foresee.html"><img src="../doc/0.png" width="95" /></a><!-- --></td>
+    </tr>
+    <tr>
+      <td>Weather augmented <a href="https://team.inria.fr/rits/computer-vision/weather-augment/"><kbd>ICCV 19</kbd></a></td>
+      <td>● Weather augmentation of Kitti &amp; Cityscapes  <br />●  For each sequence, 7+ rain levels (from dizzle to storm conditions) &amp; 7 fog intensities (from light to dense fog) <a href="/dataset/weather_augmented.html"><img src="../doc/0.png" width="95" /></a> <!-- --></td>
+    </tr>
+    <tr>
+      <td>Seeing Through Fog <a href="https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/"><kbd>CVPR 20</kbd></a> <a href="https://github.com/gruberto/Gated2Depth"><kbd>ICCV 19</kbd></a></td>
+      <td><!-- --></td>
+    </tr>
+    <tr>
+      <td>Canadian Adverse Driving Conditions <a href="https://arxiv.org/pdf/2001.10117.pdf"><kbd>arXiv 20</kbd></a></td>
+      <td>●  56000 camera images, 7000 LiDAR sweeps, <br /> ● Real dataset: 75 scenes of 50-100 frames each <br /> ● Adverse weather driving conditions, including snow <!-- --></td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/maiminh1996">maiminh1996</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>

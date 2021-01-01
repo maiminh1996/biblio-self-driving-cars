@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>3D Object Detection/ Approaches | biblio-self-driving-cars</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="3D Object Detection/ Approaches" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
+<meta property="og:description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
+<link rel="canonical" href="http://localhost:4000/3d_od/appro.html" />
+<meta property="og:url" content="http://localhost:4000/3d_od/appro.html" />
+<meta property="og:site_name" content="biblio-self-driving-cars" />
+<script type="application/ld+json">
+{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/3d_od/appro.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"3D Object Detection/ Approaches","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=11dfbf4cc6275fc1b5d027f7ffaa8884b2c10115">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">biblio-self-driving-cars</a></h1>
+        
+        
+          <img src="https://maiminh1996.github.io/minh.png" alt="Logo" />
+        
+
+        <p>2D/ 3D object detection, segmentation, depth estimation for self-driving car</p>
+
+        
+        <p class="view"><a href="https://github.com/maiminh1996/biblio-self-driving-cars">View the Project on GitHub <small>maiminh1996/biblio-self-driving-cars</small></a></p>
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      
+<h2 id="3d-object-detection-approaches">3D Object Detection/ Approaches</h2>
+
+<blockquote>
+  <p><strong><em>Type 1:</em></strong> monocular (M), stereo (S), LiDAR 64 beams (L), LiDAR 4 beams (L4), RADAR (R)<br /> 
+<strong><em>Type 2:</em></strong> supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ref</th>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: left">Data</th>
+      <th>Highlight description</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"><img src="doc/fire.png" alt="drawing" width="20" /></td>
+      <td style="text-align: left"><img src="doc/fire.png" alt="drawing" width="20" /></td>
+      <td> </td>
+      <td><!-- --></td>
+    </tr>
+    <tr>
+      <td>Pseudo-LiDAR <br /> <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf"><kbd>CVPR 19</kbd></a></td>
+      <td style="text-align: center">M / sup</td>
+      <td style="text-align: left">KITTI</td>
+      <td>● Pipeline: Depth estimator ➔ convert into pseudo pcl ➔ LiDAR-based detector <br /> ● Contrib: Convert depth into pseudo 3d point clouds <a href="/3d_od/pseudo_lidar.html"><img src="../doc/100.png" width="95" /></a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pseudo-LiDAR e2e <br /><a href="https://github.com/xinshuoweng/Mono3DPLiDAR"><kbd>ICCV 19</kbd></a></td>
+      <td style="text-align: center">M / sup</td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"><img src="doc/fire.png" alt="drawing" width="20" /></td>
+      <td style="text-align: left"><img src="doc/fire.png" alt="drawing" width="20" /></td>
+      <td> </td>
+      <td><!-- --></td>
+    </tr>
+    <tr>
+      <td>Pseudo-LiDAR V3 E2E <br /> <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Qian_End-to-End_Pseudo-LiDAR_for_Image-Based_3D_Object_Detection_CVPR_2020_paper.pdf"><kbd>CVPR 20</kbd></a></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>CG-Stereo <br /> <a href="https://arxiv.org/pdf/2003.05505.pdf"><kbd>arXiv 20</kbd></a></td>
+      <td style="text-align: center">S / sup</td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pseudo-LiDAR <br /> <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf"><kbd>CVPR 19</kbd></a></td>
+      <td style="text-align: center">S / sup</td>
+      <td style="text-align: left"> </td>
+      <td><a href="/3d_od/pseudo_lidar.html"><img src="../doc/100.png" width="95" /></a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pseudo-LiDAR ++<br /> <a href="https://arxiv.org/pdf/1906.06310.pdf"><kbd>ICRL 20</kbd></a></td>
+      <td style="text-align: center">S / sup</td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib: <a href="/3d_od/pseudo_lidar++.html"><img src="../doc/0.png" width="95" /></a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"><img src="doc/fire.png" alt="drawing" width="20" /></td>
+      <td style="text-align: left"><img src="doc/fire.png" alt="drawing" width="20" /></td>
+      <td> </td>
+      <td><!-- --></td>
+    </tr>
+    <tr>
+      <td>PointRCNN</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"><img src="doc/fire.png" alt="drawing" width="20" /></td>
+      <td style="text-align: left"><img src="doc/fire.png" alt="drawing" width="20" /></td>
+      <td> </td>
+      <td><!-- --></td>
+    </tr>
+    <tr>
+      <td>Pseudo-LiDAR ++<br /> <a href="https://arxiv.org/pdf/1906.06310.pdf"><kbd>ICRL 20</kbd></a></td>
+      <td style="text-align: center">S+L4 / sup</td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib: <a href="/3d_od/pseudo_lidar++.html"><img src="../doc/0.png" width="95" /></a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+      <td>● Net: <br />● Pipeline: <br />● Loss: <br /> ● Contrib:</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/maiminh1996">maiminh1996</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>

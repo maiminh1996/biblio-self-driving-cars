@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Depth Estimation/ Approaches | biblio-self-driving-cars</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Depth Estimation/ Approaches" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
+<meta property="og:description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
+<link rel="canonical" href="http://localhost:4000/depth_estimation/appro.html" />
+<meta property="og:url" content="http://localhost:4000/depth_estimation/appro.html" />
+<meta property="og:site_name" content="biblio-self-driving-cars" />
+<script type="application/ld+json">
+{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/depth_estimation/appro.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"Depth Estimation/ Approaches","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=11dfbf4cc6275fc1b5d027f7ffaa8884b2c10115">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">biblio-self-driving-cars</a></h1>
+        
+        
+          <img src="https://maiminh1996.github.io/minh.png" alt="Logo" />
+        
+
+        <p>2D/ 3D object detection, segmentation, depth estimation for self-driving car</p>
+
+        
+        <p class="view"><a href="https://github.com/maiminh1996/biblio-self-driving-cars">View the Project on GitHub <small>maiminh1996/biblio-self-driving-cars</small></a></p>
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h2 id="depth-estimation-approaches">Depth Estimation/ Approaches</h2>
+
+<blockquote>
+  <p><strong><em>Type 1:</em></strong> monocular (M), stereo (S), LiDAR (L), RADAR (R)<br /> 
+<strong><em>Type 2:</em></strong> supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ref</th>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: center">Data</th>
+      <th>Highlight description</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eigen et al <br /> <a href="https://arxiv.org/pdf/1406.2283.pdf"><kbd>NIPS 14</kbd></a></td>
+      <td style="text-align: center">M / sup</td>
+      <td style="text-align: center">KITTI</td>
+      <td>● Loss: <a href="/loss_problem.html">L2 loss</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DORN <br /> <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Fu_Deep_Ordinal_Regression_CVPR_2018_paper.pdf"><kbd>CVPR 18</kbd></a></td>
+      <td style="text-align: center">M / sup</td>
+      <td style="text-align: center">KITTI</td>
+      <td>Discretized depth bins &gt; direct regression <br /> binary classification 80 bins (Pixels with distance&gt;80m) <a href="https://github.com/patrick-llgc/Learning-Deep-Learning/blob/master/paper_notes/dorn.md">[more]</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FAL <br /> <a href="https://proceedings.neurips.cc/paper/2020/file/951124d4a093eeae83d9726a20295498-Paper.pdf"><kbd>NIPS 20</kbd></a></td>
+      <td style="text-align: center">M / self-sup</td>
+      <td style="text-align: center">KITTI</td>
+      <td>Occlusion-free reconstruction loss</td>
+      <td><!-- --></td>
+    </tr>
+    <tr>
+      <td>PSMNet <br /> <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Chang_Pyramid_Stereo_Matching_CVPR_2018_paper.pdf"><kbd>CVPR 18</kbd></a></td>
+      <td style="text-align: center">S / sup</td>
+      <td style="text-align: center">● KITTI <br /> ● Scene Flow</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/maiminh1996">maiminh1996</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Pseudo-LiDAR | biblio-self-driving-cars</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Pseudo-LiDAR" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
+<meta property="og:description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
+<link rel="canonical" href="http://localhost:4000/3d_od/pseudo_lidar.html" />
+<meta property="og:url" content="http://localhost:4000/3d_od/pseudo_lidar.html" />
+<meta property="og:site_name" content="biblio-self-driving-cars" />
+<script type="application/ld+json">
+{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/3d_od/pseudo_lidar.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"Pseudo-LiDAR","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=11dfbf4cc6275fc1b5d027f7ffaa8884b2c10115">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">biblio-self-driving-cars</a></h1>
+        
+        
+          <img src="https://maiminh1996.github.io/minh.png" alt="Logo" />
+        
+
+        <p>2D/ 3D object detection, segmentation, depth estimation for self-driving car</p>
+
+        
+        <p class="view"><a href="https://github.com/maiminh1996/biblio-self-driving-cars">View the Project on GitHub <small>maiminh1996/biblio-self-driving-cars</small></a></p>
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h2 id="pseudo-lidar">Pseudo-LiDAR</h2>
+<h3 id="cvpr-2019-pseudo-lidar-from-visual-depth-estimationbridging-the-gap-in-3d-object-detection-for-autonomous-driving"><a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf"><kbd>CVPR 2019</kbd> Pseudo-LiDAR from Visual Depth Estimation:Bridging the Gap in 3D Object Detection for Autonomous Driving</a></h3>
+
+<p><img src="../doc/pseudo_lidar_design.png" alt="drawing" width="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Category</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Type</td>
+      <td>● Monocular OD / supervised <br /> ● Stereo OD / supervised</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Contribution</td>
+      <td>Bridging the gap between camera based approach and lidar based approach by <strong>a simple conversion from 2D depth map into pseudo 3D point cloud</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Key ideas</td>
+      <td>1. Depth estimator (SOTA) ➔ depth map ➔ 2. <strong>Convert into pseudo 3D point cloud</strong> ➔ 3. LiDAR-based object detector (SOTA) ➔ 3D object bbox</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Pipeline</td>
+      <td>● Train mono depth estimator <a href="/depth_estimation/dorn.html">DORN</a> on 23488 <a href="/dataset/kitti.html">KITTI</a> images (raw data) (<font color="red">some of these images may **overlap** with our validation data for detection</font>) <br />●  Train bino depth estimator <a href="/depth_estimation/psmnet.html">PSMNet</a> on <a href="/dataset/sceneflow.html">Scene Flow</a> and then fine-tuning on the 200 training pairs of <a href="/dataset/kitti.html">KITTI</a> stereo 2015 (<font color="red">200 training images of KITTI stereo 2015 **overlap** with thevalidation images of KITTI object detection</font>) <br />● Train Frustum PointNet (F-POINTNET) &amp; AVOD on generated pseudo point cloud</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Network</td>
+      <td><a href="/depth_estimation/dorn.html">DORN</a>, <a href="/depth_estimation/psmnet.html">PSMNet</a> ➔ F-PointNet, AVOD</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Loss</td>
+      <td><a href="/depth_estimation/dorn.html">DORN</a>, <a href="/depth_estimation/psmnet.html">PSMNet</a> ➔ F-PointNet, AVOD</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Params + Time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Tech</td>
+      <td>● D(u, v): depth map at picel (u, v);<br /> fU: horizontal focal length of the left camera;<br /> b: horizontal offset (i.e., baseline) of stereo camera;<br /> Y(u, v): the horizontal disparity from left image to right image for each pixel <br /> <img src="../doc/disp_to_depth.png" alt="drawing" width="" /> <br /> ● (x, y, z): 3D location of each pixel (u, v)<br /> (cU, cV) is the pixel location corresponding to the camera center and fV is the vertical focal length <br /> <img src="../doc/depth_to_3dpcl.png" alt="drawing" width="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Limitations</td>
+      <td>● Pseudo point cloud depends strongly on the accuracy of depth estimator <a href="/depth_estimation/depth_limit.html">depth limitation</a> <br /> ● Training process is cumbersome <br /> ● Not an end-to-end training fashion</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">TOTEST</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/maiminh1996">maiminh1996</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
