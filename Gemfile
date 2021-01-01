@@ -12,3 +12,5 @@ gem 'github-pages', group: :jekyll_plugins
 # gem 'github-pages', '~> 209', group: :jekyll_plugins
 # gem "github-pages", group: :jekyll_plugins
 # gem 'rdiscount'
+
+gem 'jekyll-include-cache'

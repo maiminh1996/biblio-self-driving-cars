@@ -4,23 +4,23 @@
 
 ## Contents
 
-- [1. 3D Object Detection]()
-	- [1A. Evaluation metrics](3d_od/evaluation.md)
-	- [1B. Datasets](3d_od/dataset.md)
-	- [1C. Approaches](3d_od/appro.md)
-- [2. Depth Estimation]() 
-	- [2A. Evaluation metrics](depth_estimation/evaluation.md)
-	- [2B. Datasets](depth_estimation/dataset.md)
-	- [2C. Approaches](depth_estimation/appro.md)
-- [3. Segmentation]()
-	+ [3A. Evaluation metrics](seg/evaluation.md)
-	+ [3B. Datasets](seg/dataset.md)
-	+ [3C. Approaches](seg/appro.md)
-- [4. 2D Object Detection]()
-	- [4A. Evaluation metrics](2d_od/evaluation.md)
-	- [4B. Datasets](2d_od/dataset.md)
-	- [4C. Approaches](2d_od/appro.md)
-- [5. Others](#5-others)
+1. [3D Object Detection](README.md)
+	1. [Evaluation metrics](3d_od/evaluation.md)
+	2. [Datasets](3d_od/dataset.md)
+	3. [Approaches](3d_od/appro.md)
+2. [Depth Estimation](README.md) 
+	1. [Evaluation metrics](depth_estimation/evaluation.md)
+	2. [Datasets](depth_estimation/dataset.md)
+	3. [Approaches](depth_estimation/appro.md)
+3. [Segmentation](README.md)
+	1. [Evaluation metrics](seg/evaluation.md)
+	2. [Datasets](seg/dataset.md)
+	3. [Approaches](seg/appro.md)
+4. [2D Object Detection](README.md)
+	1. [Evaluation metrics](2d_od/evaluation.md)
+	2. [Datasets](2d_od/dataset.md)
+	3. [Approaches](2d_od/appro.md)
+5. [Others](#others)
 
 > **_Click on [<img src="doc/50.png" width="95">](README.md) which represents the "Reading & Writting" process of each paper to see more details_**  
 > **_Synthetic: [Loss function](loss_problem.md), [Network problem](network_problem.md), [Depth limit](depth_estimation/depth_limit.md)_**
@@ -35,14 +35,15 @@
 
 
 
-### 5 Others
+### Others
 
 > **_LiDAR:_** [awesome-LiDAR](https://github.com/szenergy/awesome-lidar#datasets), [awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis), [awesome-point-cloud-deep-learning](https://github.com/dashidhy/awesome-point-cloud-deep-learning)
 
 #### Comparison
+
  Comparison | Camera | LiDAR | RADAR 
  -- | -- | -- | -- 
-test1 | test2 | | test4
+test1 | test2 | dsds | test4
 
 #### Andrej Karpathy - AI for Full-Self Driving at Tesla
 [Andrej Karpathy - AI for Full-Self Driving at Tesla](https://www.youtube.com/watch?v=hx7BXih7zx8&feature=youtu.be)
@@ -64,5 +65,4 @@ Takeaways's Lei Xin:
 #### Other sources
 
 > **_[Learning-Deep-Learning](https://github.com/patrick-llgc/Learning-Deep-Learning)_**
-
 
