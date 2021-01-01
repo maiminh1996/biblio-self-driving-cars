@@ -22,6 +22,8 @@
 	3. [Approaches](2d_od/appro.md)
 5. [Others](#others)
 
+> **_See this repo from my site: [https://maiminh1996.github.io/biblio-self-driving-cars/](https://maiminh1996.github.io/biblio-self-driving-cars/)_**
+
 > **_Click on [<img src="doc/50.png" width="95">](README.md) which represents the "Reading & Writting" process of each paper to see more details_**  
 > **_Synthetic: [Loss function](loss_problem.md), [Network problem](network_problem.md), [Depth limit](depth_estimation/depth_limit.md)_**
 
