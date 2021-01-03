@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>biblio-self-driving-cars | 2D/ 3D object detection, segmentation, depth estimation for self-driving car</title>
+<title>All about self-driving cars | biblio-self-driving-cars</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="biblio-self-driving-cars" />
+<meta property="og:title" content="All about self-driving cars" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
 <meta property="og:description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
@@ -16,10 +16,10 @@
 <meta property="og:url" content="http://localhost:4000/all.html" />
 <meta property="og:site_name" content="biblio-self-driving-cars" />
 <script type="application/ld+json">
-{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/all.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"biblio-self-driving-cars","@context":"https://schema.org"}</script>
+{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/all.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"All about self-driving cars","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=afd743234ebb489e652674ebfae44d44bb9f1401">
+    <link rel="stylesheet" href="/assets/css/style.css?v=44ced5f91d8bafbcf1a2b029890b0a60ea2b7883">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -45,7 +45,107 @@
       </header>
       <section>
 
-      
+      <h2 id="all-about-self-driving-cars">All about self-driving cars</h2>
+<ul>
+  <li><a href="#sensors">Sensors</a></li>
+  <li><a href="#level-of-autonomous-driving">Level of autonomous driving</a></li>
+</ul>
+
+<blockquote>
+  <p><strong><em>Ref:</em></strong> <a href="https://www.fool.com/investing/2017/06/03/everything-you-need-to-know-about-self-driving-car.aspx">Everything You Need to Know About Self-Driving Cars</a></p>
+</blockquote>
+
+<h3 id="sensors">Sensors</h3>
+
+<blockquote>
+  <p><strong><em>shortcuts:</em></strong> Strengths: Str; Weaknesses: Weak</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sensor</th>
+      <th>Camera</th>
+      <th>LiDAR</th>
+      <th>RADAR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Difi</td>
+      <td> </td>
+      <td>use of light wavelengths</td>
+      <td>uses radio waves</td>
+    </tr>
+    <tr>
+      <td>aim to</td>
+      <td> </td>
+      <td>identify objects and measure distances</td>
+      <td>identify objects and determine velocity and angles</td>
+    </tr>
+    <tr>
+      <td>Str</td>
+      <td>● detect color, contrast, and high resolution better than other sensors <br /> ● long range</td>
+      <td>● good for detecting speed and distance up to 200 meters in light or dark <br /> ● works well in low light</td>
+      <td>● good range <br /> ● better than LIDAR in snow, fog, and rain <br /> ● better at detecting objects at close range</td>
+    </tr>
+    <tr>
+      <td>Weak</td>
+      <td>● only work in good light conditions<br />● performance diminishes as lights dim.<br />● don’t provide us with ‘Depth Information’ as LiDAR</td>
+      <td>● not good at detecting very close objects <br />● not work very well in fog, rain, or dust (due to its use of light wavelengths) (they generate puffy point clouds that may render the output of LiDAR point cloud inaccurate)<br />●  doesn’t distinguish color and contrast <br />●  very expensive (75000$ for LiDAR 64 beams)</td>
+      <td>low resolution</td>
+    </tr>
+    <tr>
+      <td>awere</td>
+      <td> </td>
+      <td>● cheaper in the future?<br />●  down to low resolution (32, 16, 4 beams) for cheaper</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Others: <strong>Ultrasonic</strong> systems emit ultrasonic sound waves and determine distance by how long these waves take to return to the source (this is how bats echolocate). Ultrasonic sensors are good for close-range detection in all weather, but do not have the range of LIDAR or radar.</p>
+
+<h3 id="level-of-autonomous-driving">Level of autonomous driving</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Autonomous</th>
+      <th>Difi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Level 0</td>
+      <td>No self-driving feature</td>
+    </tr>
+    <tr>
+      <td>Level 1</td>
+      <td>Controls one system at a time, like cruise control, or automatic emergency braking</td>
+    </tr>
+    <tr>
+      <td>Level 2</td>
+      <td>Can control two functions simultaneously, such as speed and steering. Tesla’s Autopilot is level 2, and other car manufacturers such as BMW are offering level 2 features, as long as there is a driver paying attention</td>
+    </tr>
+    <tr>
+      <td>Level 3</td>
+      <td>This level includes basically fully autonomous features, but will warn a driver when the driver needs to take control. This is incredibly complicated to do, because once humans get used to the self-driving function, we tend to doze off or get distracted. This level won’t deliver an appreciable jump in safety over level 2, so many companies are skipping this step</td>
+    </tr>
+    <tr>
+      <td>Level 4</td>
+      <td>Nearly autonomous. It may be possible for a human to control the car, but the car will drive itself completely and shut itself off if things go wrong.</td>
+    </tr>
+    <tr>
+      <td>Level 5</td>
+      <td>Completely autonomous; these cars lack pedals or a steering wheel and are not meant to be driven by humans.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Semi-autonomous</strong> features are essentially in levels 1 through 3, and, like Tesla’s Autopilot feature, are already in some luxury cars now.</p>
+
+<p><strong>Fully autonomous</strong> cars, at levels 4 and 5, do not require a driver to be present at all. This type of vehicle is very far off, and some question its viability, but wide adoption of fully autonomous vehicles would be the true revolution some are anticipating.</p>
 
 
       </section>

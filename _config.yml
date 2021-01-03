@@ -24,3 +24,10 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
+
+
+---
+page:
+  title: Home
+content: ../path/to/content.md
+---

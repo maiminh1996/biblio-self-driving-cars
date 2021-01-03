@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>biblio-self-driving-cars | 2D/ 3D object detection, segmentation, depth estimation for self-driving car</title>
+<title>Network design | biblio-self-driving-cars</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="biblio-self-driving-cars" />
+<meta property="og:title" content="Network design" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
 <meta property="og:description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
@@ -16,10 +16,10 @@
 <meta property="og:url" content="http://localhost:4000/network_problem.html" />
 <meta property="og:site_name" content="biblio-self-driving-cars" />
 <script type="application/ld+json">
-{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/network_problem.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"biblio-self-driving-cars","@context":"https://schema.org"}</script>
+{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/network_problem.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"Network design","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=afd743234ebb489e652674ebfae44d44bb9f1401">
+    <link rel="stylesheet" href="/assets/css/style.css?v=44ced5f91d8bafbcf1a2b029890b0a60ea2b7883">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -45,7 +45,16 @@
       </header>
       <section>
 
-      
+      <h2 id="network-design">Network design</h2>
+
+<p>| Net prob | Ref | Des | Formula |
+| – | – | – | – |</p>
+
+<h3 id="general-notes">General notes</h3>
+<ul>
+  <li>Need to leverage these encoders like ResNet, DenseNet, etc which are pre-trained on ImageNet dataset</li>
+  <li>decoder part uses Bilinear Upsampling (brief: a ‘smoother’ image overall after upsampling) rather than simple Upsampling</li>
+</ul>
 
 
       </section>

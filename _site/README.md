@@ -40,11 +40,12 @@
 
 
 
+
 ### Other sources
 
 > **_LiDAR:_** [awesome-LiDAR](https://github.com/szenergy/awesome-lidar#datasets), [awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis), [awesome-point-cloud-deep-learning](https://github.com/dashidhy/awesome-point-cloud-deep-learning)
 
-> **_Others:_** [Learning-Deep-Learning](https://github.com/patrick-llgc/Learning-Deep-Learning)
+> **_Others:_** [Learning-Deep-Learning](https://github.com/patrick-llgc/Learning-Deep-Learning), <a href="https://medium.com/swlh/making-a-pseudo-lidar-with-cameras-and-deep-learning-e8f03f939c5f">Making a Pseudo LiDAR With Cameras and Deep Learning</a>
 
 
 #### Andrej Karpathy'talk - AI for Full-Self Driving at Tesla
@@ -63,5 +64,6 @@
 10. Q&A 26:50
 
 </details>
+
 
 

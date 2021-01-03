@@ -3,6 +3,18 @@
 > **_Type 1:_** monocular (M), stereo (S), LiDAR (L), RADAR (R)<br/> 
 > **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
 
+> **_Other sources:_** [Making a Pseudo LiDAR With Cameras and Deep Learning](https://medium.com/swlh/making-a-pseudo-lidar-with-cameras-and-deep-learning-e8f03f939c5f)
+
+<details>
+  <summary>General notes!</summary>
+
+- Ref:  <a href="https://medium.com/swlh/making-a-pseudo-lidar-with-cameras-and-deep-learning-e8f03f939c5f">Depth normalization</a><br/> we need to penalize the things that are ‘closer’ more than the things that are far away, because for planning, closer objects would matter more mostly. --> <b>Depth normalization </b> is the idea taking the inverse of the depth-map<br/>
+depthNormalized = maxDepth / original_depth_map<br/>;where maxDepth is the max depth value in the whole dataset
+
+</details>
+
+
+
 | Ref | Type | Data | Highlight description |
 | -- | :--: | :--: | -- | 
 | Eigen et al <br/> [<kbd>NIPS 14</kbd>](https://arxiv.org/pdf/1406.2283.pdf) | M / sup | KITTI | ● Loss: [L2 loss](../loss_problem.md)|

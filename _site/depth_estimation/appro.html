@@ -19,7 +19,7 @@
 {"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/depth_estimation/appro.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"Depth Estimation/ Approaches","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=afd743234ebb489e652674ebfae44d44bb9f1401">
+    <link rel="stylesheet" href="/assets/css/style.css?v=44ced5f91d8bafbcf1a2b029890b0a60ea2b7883">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -51,6 +51,18 @@
   <p><strong><em>Type 1:</em></strong> monocular (M), stereo (S), LiDAR (L), RADAR (R)<br /> 
 <strong><em>Type 2:</em></strong> supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)</p>
 </blockquote>
+
+<blockquote>
+  <p><strong><em>Other sources:</em></strong> <a href="https://medium.com/swlh/making-a-pseudo-lidar-with-cameras-and-deep-learning-e8f03f939c5f">Making a Pseudo LiDAR With Cameras and Deep Learning</a></p>
+</blockquote>
+
+<details>
+  <summary>General notes!</summary>
+
+- Ref:  <a href="https://medium.com/swlh/making-a-pseudo-lidar-with-cameras-and-deep-learning-e8f03f939c5f">Depth normalization</a><br /> we need to penalize the things that are ‘closer’ more than the things that are far away, because for planning, closer objects would matter more mostly. --&gt; <b>Depth normalization </b> is the idea taking the inverse of the depth-map<br />
+depthNormalized = maxDepth / original_depth_map<br />;where maxDepth is the max depth value in the whole dataset
+
+</details>
 
 <table>
   <thead>

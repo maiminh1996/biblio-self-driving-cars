@@ -12,7 +12,7 @@
 | Network | [DORN](../depth_estimation/dorn.md), [PSMNet](../depth_estimation/psmnet.md) ➔ F-PointNet, AVOD |
 | Loss | [DORN](../depth_estimation/dorn.md), [PSMNet](../depth_estimation/psmnet.md) ➔ F-PointNet, AVOD |
 | Params + Time |  | 
-| Tech | ● D(u, v): depth map at picel (u, v);<br/> fU: horizontal focal length of the left camera;<br/> b: horizontal offset (i.e., baseline) of stereo camera;<br/> Y(u, v): the horizontal disparity from left image to right image for each pixel <br/> <img src="../doc/disp_to_depth.png" alt="drawing" width=""/> <br/> ● (x, y, z): 3D location of each pixel (u, v)<br/> (cU, cV) is the pixel location corresponding to the camera center and fV is the vertical focal length <br/> <img src="../doc/depth_to_3dpcl.png" alt="drawing" width=""/> | 
+| Tech | [Inverse Projection Transformation](https://towardsdatascience.com/inverse-projection-transformation-c866ccedef1c) 3D reconstruction <br/> ● Disparity to depth <br/> D(u, v): depth map at picel (u, v);<br/> fU: horizontal focal length of the left camera;<br/> b: horizontal offset (i.e., baseline) of stereo camera;<br/> Y(u, v): the horizontal disparity from left image to right image for each pixel <br/> <img src="../doc/disp_to_depth.png" alt="drawing" width=""/> <br/> ● depth to 3d point <br/>(x, y, z): 3D location of each pixel (u, v)<br/> (cU, cV) is the pixel location corresponding to the camera center and fV is the vertical focal length <br/> <img src="../doc/depth_to_3dpcl.png" alt="drawing" width=""/> | 
 | Limitations | ● Pseudo point cloud depends strongly on the accuracy of depth estimator [depth limitation](../depth_estimation/depth_limit.md) <br/> ● Training process is cumbersome <br/> ● Not an end-to-end training fashion |
 | TOTEST |  |
 

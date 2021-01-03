@@ -28,23 +28,17 @@
 > **_See this repo from my site: [https://maiminh1996.github.io/biblio-self-driving-cars/](https://maiminh1996.github.io/biblio-self-driving-cars/)_**
 
 > **_Click on [<img src="doc/50.png" width="95">](README.md) which represents the "Reading & Writting" process of each paper to see more details_**  
-> **_Synthetic: [Loss function](loss_problem.md), [Network problem](network_problem.md), [Depth limit](depth_estimation/depth_limit.md)_**
+> **_Synthetic: [Loss function](loss_problem.md), [Network problem](network_problem.md), [Depth limit](depth_estimation/depth_limit.md)_, [Geometry](geometry.md)**
 
 > **_Update: in the process of adding all the articles i've read before 2021_** ~_~  
 > **_Here is [time-list paper](time_list_paper.md)_**
-
-
-
-
-
-
 
 
 ### Other sources
 
 > **_LiDAR:_** [awesome-LiDAR](https://github.com/szenergy/awesome-lidar#datasets), [awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis), [awesome-point-cloud-deep-learning](https://github.com/dashidhy/awesome-point-cloud-deep-learning)
 
-> **_Others:_** [Learning-Deep-Learning](https://github.com/patrick-llgc/Learning-Deep-Learning)
+> **_Others:_** [Learning-Deep-Learning](https://github.com/patrick-llgc/Learning-Deep-Learning), <a href="https://medium.com/swlh/making-a-pseudo-lidar-with-cameras-and-deep-learning-e8f03f939c5f">Making a Pseudo LiDAR With Cameras and Deep Learning</a>
 
 
 #### Andrej Karpathy'talk - AI for Full-Self Driving at Tesla
@@ -65,3 +59,9 @@
 </details>
 
 
+
+<!--
+
+</br>● 
+
+-->
