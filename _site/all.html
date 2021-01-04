@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>All about self-driving cars | biblio-self-driving-cars</title>
+<title>biblio-self-driving-cars</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="All about self-driving cars" />
+<meta property="og:title" content="biblio-self-driving-cars" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
-<meta property="og:description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
 <link rel="canonical" href="http://localhost:4000/all.html" />
 <meta property="og:url" content="http://localhost:4000/all.html" />
 <meta property="og:site_name" content="biblio-self-driving-cars" />
 <script type="application/ld+json">
-{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/all.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"All about self-driving cars","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/all.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"biblio-self-driving-cars","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=44ced5f91d8bafbcf1a2b029890b0a60ea2b7883">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d118785de92220cec3651bfa4d7040244df72ae2">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -33,7 +31,7 @@
           <img src="https://maiminh1996.github.io/minh.png" alt="Logo" />
         
 
-        <p>2D/ 3D object detection, segmentation, depth estimation for self-driving car</p>
+        <p></p>
 
         
         <p class="view"><a href="https://github.com/maiminh1996/biblio-self-driving-cars">View the Project on GitHub <small>maiminh1996/biblio-self-driving-cars</small></a></p>
@@ -45,8 +43,14 @@
       </header>
       <section>
 
-      <h2 id="all-about-self-driving-cars">All about self-driving cars</h2>
+      <!-- CSS -->
+<link rel="stylesheet" style="text/css" href="styles.css" />
+
+<!--     -->
+
+<h2 id="all-about-self-driving-cars">All about self-driving cars</h2>
 <ul>
+  <li><a href="#tools">Tools</a></li>
   <li><a href="#sensors">Sensors</a></li>
   <li><a href="#level-of-autonomous-driving">Level of autonomous driving</a></li>
 </ul>
@@ -55,11 +59,21 @@
   <p><strong><em>Ref:</em></strong> <a href="https://www.fool.com/investing/2017/06/03/everything-you-need-to-know-about-self-driving-car.aspx">Everything You Need to Know About Self-Driving Cars</a></p>
 </blockquote>
 
+<h3 id="tools">Tools</h3>
+<ul>
+  <li>Meshlab:</li>
+  <li>VTK: Process images and create 3D computer graphics with the Visualization Toolkit.</li>
+  <li>LiDARView</li>
+  <li>Open3D</li>
+</ul>
+
 <h3 id="sensors">Sensors</h3>
 
 <blockquote>
   <p><strong><em>shortcuts:</em></strong> Strengths: Str; Weaknesses: Weak</p>
 </blockquote>
+
+<p>Ref: <a href="https://www.autopilotreview.com/lidar-vs-cameras-self-driving-cars/">LiDAR vs. Cameras for Self Driving Cars – What’s Best?</a></p>
 
 <table>
   <thead>
@@ -74,8 +88,8 @@
     <tr>
       <td>Difi</td>
       <td> </td>
-      <td>use of light wavelengths</td>
-      <td>uses radio waves</td>
+      <td>use of light wavelengths <br /> range: HDL64 S3D and VLP32C scanners achieve a range of 100 m and 120 m</td>
+      <td>uses radio waves <br /> rang: up to 200 m</td>
     </tr>
     <tr>
       <td>aim to</td>
@@ -104,7 +118,20 @@
   </tbody>
 </table>
 
-<p>Others: <strong>Ultrasonic</strong> systems emit ultrasonic sound waves and determine distance by how long these waves take to return to the source (this is how bats echolocate). Ultrasonic sensors are good for close-range detection in all weather, but do not have the range of LIDAR or radar.</p>
+<p>Others:</p>
+<ul>
+  <li><strong>Ultrasonic</strong> systems emit ultrasonic sound waves and determine distance by how long these waves take to return to the source (this is how bats echolocate). Ultrasonic sensors are good for close-range detection in all weather, but do not have the range of LIDAR or radar.</li>
+  <li>Simulation: downsampling process the scan lines of the LiDAR depth(64-line to 32-line…) –&gt; TODO</li>
+</ul>
+
+<h5 id="lidar-intensity"><a href="https://geodetics.com/lidar-intensity-applications/">LiDAR Intensity</a>:</h5>
+<p>LiDAR intensity is recorded as the return <strong>strength of a laser beam</strong>. In the Geo-MMS LiDAR systems, it is a bi-product, provided as an integer number between <em>1-256</em>. This number varies with the <strong>composition of the surface object reflecting the laser beam</strong>. A low number indicates low reflectivity while a high number indicates high reflectivity. The intensity of the laser beam return can also <strong>be affected by the angle of arrival (scan angle), range, surface composition, roughness, and moisture content</strong>.  This means that features under the nadir of the LiDAR sensor usually have higher intensity than the same features along the edges (tilted further), as the returned energy decreases. For these reasons, LiDAR intensity does not always lead to consistent results. It must be used as a relative measurement.  An advantage is that unlike passive vision sensors (cameras), it is indifferent to shadows.</p>
+
+<h5 id="filter-lidar-data-point-by-point">Filter LiDAR data point-by-point</h5>
+<p>Ref: https://www.safe.com/blog/2013/10/14-ways-to-take-charge-of-lidar-data/<br />
+use calculations to filter your point cloud. For example, we know that road signs are very reflective. (Unless you live in the woods or in one of those cities that doesn’t have any streets – in which case, this is me informing you that road signs are very reflective.) This reflectiveness would be represented in the intensity component of a LiDAR dataset. So if we create a filtering expression around the intensity component, we can extract the road signs.<br />
+<img src="/doc/filter_inten_lidar.png" alt="" /><br />
+You can see the road signs highlighted in red, having been extracted from the original point cloud behind it.</p>
 
 <h3 id="level-of-autonomous-driving">Level of autonomous driving</h3>
 
@@ -146,6 +173,7 @@
 <p><strong>Semi-autonomous</strong> features are essentially in levels 1 through 3, and, like Tesla’s Autopilot feature, are already in some luxury cars now.</p>
 
 <p><strong>Fully autonomous</strong> cars, at levels 4 and 5, do not require a driver to be present at all. This type of vehicle is very far off, and some question its viability, but wide adoption of fully autonomous vehicles would be the true revolution some are anticipating.</p>
+
 
 
       </section>

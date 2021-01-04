@@ -1,3 +1,6 @@
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css">
+<!--     -->
 
 ## Depth Estimation/ Evaluation Metrics <img src="../doc/50.png" width="95">
 

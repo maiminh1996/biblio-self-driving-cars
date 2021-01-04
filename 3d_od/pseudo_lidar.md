@@ -1,3 +1,7 @@
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css">
+<!--     -->
+
 ## Pseudo-LiDAR <img src="../doc/100.png" width="95">
 ### [<kbd>CVPR 2019</kbd> Pseudo-LiDAR from Visual Depth Estimation: Bridging the Gap in 3D Object Detection for Autonomous Driving](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Pseudo-LiDAR_From_Visual_Depth_Estimation_Bridging_the_Gap_in_3D_CVPR_2019_paper.pdf)
 

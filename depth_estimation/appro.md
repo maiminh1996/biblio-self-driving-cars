@@ -1,9 +1,12 @@
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css">
+<!--     -->
+
 ## Depth Estimation/ Approaches
 
-- [Monocular](#monocular)
-- [Binocular](#binocular)
-- [LiDAR](#lidar-only)
-- [Fusion](#fusion)
+- [Monocular (depth prediction)](#monocular)
+- [Binocular (depth prediction)](#binocular)
+- [Depth completion](#depth-completion)
 
 > **_Type 1:_** monocular (M), stereo (S), LiDAR (L), RADAR (R)<br/> 
 > **_Type 2:_** supervised (sup), unsupervised (unsup), semi-supervised, (semi-sup), self-supervised (self-sup)
@@ -19,6 +22,8 @@ Other sources:
 depthNormalized = maxDepth / original_depth_map<br/>;where maxDepth is the max depth value in the whole dataset
 
 </details>
+
+https://github.com/alexklwong/awesome-state-of-depth-completion
 
 ## Monocular
 
@@ -49,9 +54,11 @@ depthNormalized = maxDepth / original_depth_map<br/>;where maxDepth is the max d
 #### Self-supervised
 
 
-## LiDAR only
+## Depth completion
 
 #### Supervised
+
+[<kbd>CVPR 19</kbd> DeepLiDAR](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwifkZCW6oDuAhWMURUIHTqwCtYQFjACegQIAxAC&url=http%3A%2F%2Fopenaccess.thecvf.com%2Fcontent_CVPR_2019%2Fpapers%2FQiu_DeepLiDAR_Deep_Surface_Normal_Guided_Depth_Prediction_for_Outdoor_Scene_CVPR_2019_paper.pdf&usg=AOvVaw1bPN7MFbPOOt4Bf7yynGPu) () [[Notes](deeplidar.md)]
 
 #### Unsupervised
 
@@ -59,12 +66,3 @@ depthNormalized = maxDepth / original_depth_map<br/>;where maxDepth is the max d
 
 #### Self-supervised
 
-## Fusion
-
-#### Supervised
-
-#### Unsupervised
-
-#### Semi-supervised
-
-#### Self-supervised

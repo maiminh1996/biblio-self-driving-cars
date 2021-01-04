@@ -1,3 +1,7 @@
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css">
+<!--     -->
+
 ## Pseudo-LiDAR++ <img src="../doc/75.png" width="95">
 ### [<kbd>ICLR 2020</kbd> Pseudo-LiDAR++: Accurate Depth for 3D Object Detection in Autonomous Driving](https://arxiv.org/pdf/1906.06310.pdf)
 

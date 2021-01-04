@@ -1,8 +1,11 @@
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css">
+<!--     -->
 
 ## Depth Estimation/ Evaluation Metrics <img src="../doc/50.png" width="95">
 
-> **_Depth prediction (DP):_** takes only monocular/ stereo as input  
-> **_Depth completion (DC):_** takes depth sensor (ex: LiDAR, RADAR) as input component
+> **_Depth prediction (DP):_** takes only monocular/ stereo as input 
+> **_Depth completion (DC):_** takes depth sensor (ex: LiDAR, RADAR) as input component (converting a sparse depth map Dsparse into a dense depth map Ddense)
 
 > **_Metrics DP:_** Accu, SILog, sqErrorRel, absErrorRel, iRMSE, thresh δ  
 > **_Metrics DC:_** Accu, iRMSE, iMAE, RMSE, MAE, thresh δ

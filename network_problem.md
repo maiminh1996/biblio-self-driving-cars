@@ -1,3 +1,7 @@
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css">
+<!--     -->
+
 ## Network design
 
 | Net prob | Ref | Des | Formula |

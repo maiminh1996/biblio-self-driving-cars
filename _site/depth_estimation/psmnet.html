@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>biblio-self-driving-cars | 2D/ 3D object detection, segmentation, depth estimation for self-driving car</title>
+<title>biblio-self-driving-cars</title>
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="biblio-self-driving-cars" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
-<meta property="og:description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
 <link rel="canonical" href="http://localhost:4000/depth_estimation/psmnet.html" />
 <meta property="og:url" content="http://localhost:4000/depth_estimation/psmnet.html" />
 <meta property="og:site_name" content="biblio-self-driving-cars" />
 <script type="application/ld+json">
-{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/depth_estimation/psmnet.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"biblio-self-driving-cars","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/depth_estimation/psmnet.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"biblio-self-driving-cars","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=44ced5f91d8bafbcf1a2b029890b0a60ea2b7883">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d118785de92220cec3651bfa4d7040244df72ae2">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -33,7 +31,7 @@
           <img src="https://maiminh1996.github.io/minh.png" alt="Logo" />
         
 
-        <p>2D/ 3D object detection, segmentation, depth estimation for self-driving car</p>
+        <p></p>
 
         
         <p class="view"><a href="https://github.com/maiminh1996/biblio-self-driving-cars">View the Project on GitHub <small>maiminh1996/biblio-self-driving-cars</small></a></p>
@@ -45,7 +43,66 @@
       </header>
       <section>
 
-      
+      <!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css" />
+
+<!--     -->
+
+<h2 id="psmnet">PSMNet</h2>
+<h3 id="cvpr-18-pyramid-stereo-matching-network"><a href="https://arxiv.org/pdf/1803.08669.pdf"><kbd>CVPR 18</kbd> Pyramid Stereo Matching Network</a></h3>
+
+<p><img src="/doc/psmnet_design.png" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Category</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Type</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Contribution</td>
+      <td>● end-to-end  learning  framework  forstereo matching without any post-processing &lt;/br&gt;● pyramid pooling module for incorpo-rating global context information into image features  a stacked hourglass 3D CNN to extend theregional support of context information in cost volume.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Key ideas</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Pipeline</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Network</td>
+      <td>Spatial Pyramid Pooling (SSP) module to gather context information then oncatenate the left and right feature maps into a cost volume (concatenating left feature maps with their cor-responding right feature maps across each disparity level,resulting in a 4D volume (height×width×disparity×featuresize).) , which is fed into a 3D CNN for regularization, finally, regression is applied to calculatethe output disparity map</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Loss</td>
+      <td><strong>Smooth L1 loss</strong> is widely used in bounding box regression for object detection  because  of  <strong>its  robustness  and  low  sensitivity  to outliers [7], as compared to L2 loss</strong> (on the predicted disparity)<br /> <img src="/doc/psmnet_loss.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Params + Time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Tech</td>
+      <td><img src="/doc/disp_regression.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Limitations</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">TOTEST</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 
       </section>

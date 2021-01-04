@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Pseudo-LiDAR++ | biblio-self-driving-cars</title>
+<title>biblio-self-driving-cars</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Pseudo-LiDAR++" />
+<meta property="og:title" content="biblio-self-driving-cars" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
-<meta property="og:description" content="2D/ 3D object detection, segmentation, depth estimation for self-driving car" />
 <link rel="canonical" href="http://localhost:4000/3d_od/pseudo_lidar++.html" />
 <meta property="og:url" content="http://localhost:4000/3d_od/pseudo_lidar++.html" />
 <meta property="og:site_name" content="biblio-self-driving-cars" />
 <script type="application/ld+json">
-{"description":"2D/ 3D object detection, segmentation, depth estimation for self-driving car","@type":"WebPage","url":"http://localhost:4000/3d_od/pseudo_lidar++.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"Pseudo-LiDAR++","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/3d_od/pseudo_lidar++.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maiminh1996.github.io/minh.png"}},"headline":"biblio-self-driving-cars","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=44ced5f91d8bafbcf1a2b029890b0a60ea2b7883">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d118785de92220cec3651bfa4d7040244df72ae2">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -33,7 +31,7 @@
           <img src="https://maiminh1996.github.io/minh.png" alt="Logo" />
         
 
-        <p>2D/ 3D object detection, segmentation, depth estimation for self-driving car</p>
+        <p></p>
 
         
         <p class="view"><a href="https://github.com/maiminh1996/biblio-self-driving-cars">View the Project on GitHub <small>maiminh1996/biblio-self-driving-cars</small></a></p>
@@ -45,8 +43,15 @@
       </header>
       <section>
 
-      <h2 id="pseudo-lidar">Pseudo-LiDAR++</h2>
+      <!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css" />
+
+<!--     -->
+
+<h2 id="pseudo-lidar-">Pseudo-LiDAR++ <img src="../doc/75.png" width="95" /></h2>
 <h3 id="iclr-2020-pseudo-lidar-accurate-depth-for-3d-object-detection-in-autonomous-driving"><a href="https://arxiv.org/pdf/1906.06310.pdf"><kbd>ICLR 2020</kbd> Pseudo-LiDAR++: Accurate Depth for 3D Object Detection in Autonomous Driving</a></h3>
+
+<p><img src="/doc/pseudo_lidar++.png" alt="" /></p>
 
 <table>
   <thead>
@@ -58,27 +63,27 @@
   <tbody>
     <tr>
       <td>Type</td>
-      <td> </td>
+      <td>stereo / stereo+Lidar 4 beams 3D object detection / supervised</td>
     </tr>
     <tr>
       <td>Contribution</td>
-      <td> </td>
+      <td>● Depth Cost Volume <br /> ● Depth correction to de-bias the depth estimation <br /> ● pseudo-pipeline <br /> ● Simulation LiDAR 4 beams from LiDAR 64 beams</td>
     </tr>
     <tr>
       <td>Key ideas</td>
-      <td> </td>
+      <td>1. Depth estimator (SOTA) ➔ depth map 2. Depth correction ➔ 3. <strong>Convert into pseudo 3D point cloud</strong> ➔ 4. LiDAR-based object detector (SOTA) ➔ 3D object bbox</td>
     </tr>
     <tr>
       <td>Pipeline</td>
-      <td> </td>
+      <td>● Pre-train their stereo depth estimator SDN on the synthetic <a href="/dataset/sceneflow.html">Scene Flow dataset</a> and fine-tune it on the 3712 training images of <a href="/dataset/kitti.html">KITTI OD</a>. <br />● Using LiDAR 4 beams input to correct the predicted depth map (KNN (K=10))<br />● Train AVOD, PIXOR &amp; PointRCNN on generated pseudo point cloud on 3,712 training <a href="/dataset/kitti.html">KITTI OD</a></td>
     </tr>
     <tr>
       <td>Network</td>
-      <td> </td>
+      <td><strong>Depth estimation:</strong> Stereo Depth Network (SDN) use <a href="/depth_estimation/psmnet.html">PSMNet</a> as the backbone and then adding depth cost volume (to directly minimize depth loss instead of disparity mloss; For example, it may be completely appropriate to locally smooth two neighboring pixels with disparity 85 and 86 (changing the depth by a few cm to smooth out a surface), whereas applying the samekernel for two pixels with disparity 5 and 6 could easily move the 3D points by 10m or more;  a single pixel error in disparity implies only a 0.1merror in depth at a depth of 5 meters, but a 5.8m error at a depth of50 meters) <img src="/doc/depth_disp_rela.png" alt="" /> <br /> and then adding 3D conv softmax <br />● disparity in the range of [0,191] (following PSMNet) (discontinuous disparity ~ disp pixel)) <br />● depth in the range of [1m,80m] and set the grid of depth in Cdepth to be 1m (discontinuous depth ~ 1/(disp pixel))</td>
     </tr>
     <tr>
       <td>Loss</td>
-      <td> </td>
+      <td>● in <a href="../depth_estimation.md">PSMNet</a> the smooth L1 loss on the predicted disparity <br /><img src="/doc/psmnet_disp_loss.png" alt="" /> <br />● in Pseudo-LiDAR++ the smooth L1 loss on the predict depth<br /> <img src="/doc/pseudo_lidar++_loss.png" alt="" /></td>
     </tr>
     <tr>
       <td>Params + Time</td>
@@ -86,7 +91,7 @@
     </tr>
     <tr>
       <td>Tech</td>
-      <td> </td>
+      <td>● Depth correction –&gt; KNN  <img src="/doc/depth_correction.png" alt="" /><br />● Simulation LiDAR 4 beams<br /> <img src="/doc/simulation_lidar4beams1.png" alt="" /> <br /><img src="/doc/simulation_lidar4beams2.png" alt="" /></td>
     </tr>
     <tr>
       <td>Limitations</td>
@@ -98,6 +103,7 @@
     </tr>
   </tbody>
 </table>
+
 
 
       </section>

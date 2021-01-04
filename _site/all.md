@@ -1,23 +1,46 @@
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="styles.css">
+<!--     -->
+
 ## All about self-driving cars
+- [Tools](#tools)
 - [Sensors](#sensors)
 - [Level of autonomous driving](#level-of-autonomous-driving)
 
 > **_Ref:_** [Everything You Need to Know About Self-Driving Cars](https://www.fool.com/investing/2017/06/03/everything-you-need-to-know-about-self-driving-car.aspx)
 
+### Tools
+- Meshlab: 
+- VTK: Process images and create 3D computer graphics with the Visualization Toolkit.
+- LiDARView
+- Open3D
+
 ### Sensors
 
 > **_shortcuts:_** Strengths: Str; Weaknesses: Weak
 
+Ref: [LiDAR vs. Cameras for Self Driving Cars – What’s Best?](https://www.autopilotreview.com/lidar-vs-cameras-self-driving-cars/)
 
 | Sensor | Camera | LiDAR | RADAR |
 | -- | -- | -- | -- |
-| Difi | | use of light wavelengths| uses radio waves | 
+| Difi | | use of light wavelengths <br/> range: HDL64 S3D and VLP32C scanners achieve a range of 100 m and 120 m| uses radio waves <br/> rang: up to 200 m | 
 | aim to | | identify objects and measure distances| identify objects and determine velocity and angles|
 | Str | ● detect color, contrast, and high resolution better than other sensors <br/> ● long range | ● good for detecting speed and distance up to 200 meters in light or dark <br/> ● works well in low light | ● good range <br/> ● better than LIDAR in snow, fog, and rain <br/> ● better at detecting objects at close range|
 | Weak | ● only work in good light conditions<br/>● performance diminishes as lights dim.<br/>● don’t provide us with ‘Depth Information’ as LiDAR| ● not good at detecting very close objects <br/>● not work very well in fog, rain, or dust (due to its use of light wavelengths) (they generate puffy point clouds that may render the output of LiDAR point cloud inaccurate)<br/>●  doesn't distinguish color and contrast <br/>●  very expensive (75000$ for LiDAR 64 beams) |  low resolution|
 | awere | | ● cheaper in the future?<br/>●  down to low resolution (32, 16, 4 beams) for cheaper | 
 
-Others: **Ultrasonic** systems emit ultrasonic sound waves and determine distance by how long these waves take to return to the source (this is how bats echolocate). Ultrasonic sensors are good for close-range detection in all weather, but do not have the range of LIDAR or radar.
+Others: 
+- **Ultrasonic** systems emit ultrasonic sound waves and determine distance by how long these waves take to return to the source (this is how bats echolocate). Ultrasonic sensors are good for close-range detection in all weather, but do not have the range of LIDAR or radar.
+- Simulation: downsampling process the scan lines of the LiDAR depth(64-line to 32-line...) --> TODO
+
+##### [LiDAR Intensity](https://geodetics.com/lidar-intensity-applications/):
+LiDAR intensity is recorded as the return **strength of a laser beam**. In the Geo-MMS LiDAR systems, it is a bi-product, provided as an integer number between *1-256*. This number varies with the **composition of the surface object reflecting the laser beam**. A low number indicates low reflectivity while a high number indicates high reflectivity. The intensity of the laser beam return can also **be affected by the angle of arrival (scan angle), range, surface composition, roughness, and moisture content**.  This means that features under the nadir of the LiDAR sensor usually have higher intensity than the same features along the edges (tilted further), as the returned energy decreases. For these reasons, LiDAR intensity does not always lead to consistent results. It must be used as a relative measurement.  An advantage is that unlike passive vision sensors (cameras), it is indifferent to shadows.
+
+##### Filter LiDAR data point-by-point 
+Ref: https://www.safe.com/blog/2013/10/14-ways-to-take-charge-of-lidar-data/  
+use calculations to filter your point cloud. For example, we know that road signs are very reflective. (Unless you live in the woods or in one of those cities that doesn’t have any streets – in which case, this is me informing you that road signs are very reflective.) This reflectiveness would be represented in the intensity component of a LiDAR dataset. So if we create a filtering expression around the intensity component, we can extract the road signs.  
+![](doc/filter_inten_lidar.png)  
+You can see the road signs highlighted in red, having been extracted from the original point cloud behind it.
 
 ### Level of autonomous driving
 
@@ -33,3 +56,4 @@ Others: **Ultrasonic** systems emit ultrasonic sound waves and determine distanc
 **Semi-autonomous** features are essentially in levels 1 through 3, and, like Tesla's Autopilot feature, are already in some luxury cars now.
 
 **Fully autonomous** cars, at levels 4 and 5, do not require a driver to be present at all. This type of vehicle is very far off, and some question its viability, but wide adoption of fully autonomous vehicles would be the true revolution some are anticipating.
+

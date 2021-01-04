@@ -48,6 +48,9 @@
 7. <p align="center" vertical-align="middle"> <img src="doc/fire.png" alt="drawing" width="20"/> </p>
 
 8. Teamplate method
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css">
+<!--     -->
 ## Short Name 
 ### [<kbd>conference</kbd> Paper name](link-to-paper)
 

@@ -1,3 +1,7 @@
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css">
+<!--     -->
+
 ## Depth Estimation/ Datasets
 > **_How to obtain depth ground truth:_** 
 

@@ -1,3 +1,5 @@
+ <link rel="stylesheet" href="styles.css"> 
+
 # [&larr;](https://maiminh1996.github.io/blog.html)
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
@@ -28,15 +30,10 @@
 > **_See this repo from my site: [https://maiminh1996.github.io/biblio-self-driving-cars/](https://maiminh1996.github.io/biblio-self-driving-cars/)_**
 
 > **_Click on [<img src="doc/50.png" width="95">](README.md) which represents the "Reading & Writting" process of each paper to see more details_**  
-> **_Synthetic: [Loss function](loss_problem.md), [Network problem](network_problem.md), [Depth limit](depth_estimation/depth_limit.md)_**
+> **_Synthetic: [Loss function](loss_problem.md), [Network problem](network_problem.md), [Depth limit](depth_estimation/depth_limit.md)_, [Geometry](geometry.md)**
 
 > **_Update: in the process of adding all the articles i've read before 2021_** ~_~  
 > **_Here is [time-list paper](time_list_paper.md)_**
-
-
-
-
-
 
 
 
@@ -67,3 +64,8 @@
 
 
 
+<!--
+
+</br>● 
+
+-->

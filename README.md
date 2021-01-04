@@ -1,3 +1,5 @@
+ <link rel="stylesheet" href="styles.css"> 
+
 # [&larr;](https://maiminh1996.github.io/blog.html)
 
 <p align="center" vertical-align="middle"><img src="doc/fire.png" alt="drawing" width="20"/><img src="doc/fire.png" alt="drawing" width="30"/><img src="doc/fire.png" alt="drawing" width="20"/></p>
@@ -32,6 +34,8 @@
 
 > **_Update: in the process of adding all the articles i've read before 2021_** ~_~  
 > **_Here is [time-list paper](time_list_paper.md)_**
+
+
 
 
 ### Other sources

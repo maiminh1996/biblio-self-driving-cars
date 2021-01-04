@@ -1,3 +1,6 @@
+<!-- CSS -->
+<link rel="stylesheet" style="text/css" href="../styles.css">
+<!--     -->
 
 ## 3D Object Detection/ Approaches
 
@@ -21,10 +24,13 @@
 
 #### Unsupervised
 
+[<kbd>CVPR 17</kbd> Unsupervised Monocular Depth Estimation with Left-Right Consistency](https://arxiv.org/pdf/1609.03677.pdf) (end-to-end/ novel loss that enforces left-right depth/ An effective evaluation) [TOREAD]
+
 #### Semi-supervised
 
 #### Self-supervised
 
+[<kbd>ECCV 20</kbd> Pseudo RGB-D for Self-Improving MonocularSLAM and Depth Prediction](https://arxiv.org/pdf/2004.10681.pdf) (outperform  state-of-the-art self-supervised monocular and stereo depth prediction networks (e.g., Monodepth2)) [TOREAD]
 
 ## Binocular
 
