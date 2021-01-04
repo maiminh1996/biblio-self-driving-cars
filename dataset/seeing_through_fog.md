@@ -22,6 +22,22 @@
 | Notes |  |
 
 
-## Simulation 
-Simulated data to the clear training data as an alternative approach to tackle the rare harsh weather conditions.   
+## Simulation Fog
+- Simulated data to the clear training data as an alternative approach to tackle the rare harsh weather conditions.
+
+- Fog measurements are rare in the proposed dataset
+
+- Fog is the weather condition where established fusion techniques drop the most
+
+
 Ref: [Seeing Through Fog Without Seeing Fog:Deep Multimodal Sensor Fusion in Unseen Adverse Weather(Supplemental Material)](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/figures/AdverseWeatherFusion_Supplement.pdf)
+
+#### Intensity Imaging in Fog
+
+In foggy conditions, light is scattered by the suspended water droplets before falling into the image sensor. This scatteringphenomenon has two primary effects.
+- First, the chief ray is attenuated before falling into the sensor,
+- second, a signalfloor of scattering light is present.
+
+Both effects reduce contrast, and the observed foggy image can be modeled by [Semantic foggy scene understanding with synthetic data](https://arxiv.org/abs/1708.07819):
+![](../doc/simu_fog_img.png)  
+where **Iclear** is the latent clear image; **t**: transmissivity; **L**: the global ambient component
