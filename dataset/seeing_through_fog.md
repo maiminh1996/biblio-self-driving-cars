@@ -21,23 +21,26 @@
 | Evaluation |  |
 | Notes |  |
 
+Based on calibrated fogchamber measurements we provide parameters both for Velodyne HDL-S3D and HDL-S2 sensors
 
-## Simulation Fog
-- Simulated data to the clear training data as an alternative approach to tackle the rare harsh weather conditions.
+## Simulation Fog (for both image and LiDAR)
 
-- Fog measurements are rare in the proposed dataset
+> **__Fog is the weather condition where established fusion techniques drop the most__**
 
-- Fog is the weather condition where established fusion techniques drop the most
+Ref: [Seeing Through Fog Without Seeing Fog:Deep Multimodal Sensor Fusion in Unseen Adverse Weather (Supplemental Material)](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/figures/AdverseWeatherFusion_Supplement.pdf)
 
 
-Ref: [Seeing Through Fog Without Seeing Fog:Deep Multimodal Sensor Fusion in Unseen Adverse Weather(Supplemental Material)](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/figures/AdverseWeatherFusion_Supplement.pdf)
+### Intensity Imaging in Fog
 
-#### Intensity Imaging in Fog
+Light is scattered by fog before falling into the image sensor:
+- The chief ray is attenuated before falling into the sensor,
+- A signalfloor of scattering light is present.
 
-In foggy conditions, light is scattered by the suspended water droplets before falling into the image sensor. This scatteringphenomenon has two primary effects.
-- First, the chief ray is attenuated before falling into the sensor,
-- second, a signalfloor of scattering light is present.
+Both effects reduce contrast, and the observed foggy image can be modeled by [<kbd>IJCV 18</kbd> Semantic foggy scene understanding with synthetic data](https://arxiv.org/abs/1708.07819):
 
-Both effects reduce contrast, and the observed foggy image can be modeled by [Semantic foggy scene understanding with synthetic data](https://arxiv.org/abs/1708.07819):
-![](../doc/simu_fog_img.png)  
-where **Iclear** is the latent clear image; **t**: transmissivity; **L**: the global ambient component
+![](../doc/simu_fog_img.png)
+
+where: 
+- **Iclear** is the latent clear image
+- **t**: transmissivity
+- **L**: the global ambient component
