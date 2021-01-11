@@ -3,7 +3,7 @@
 <!--     -->
 
 ## Review & Tutorial sources
-- [<kbd>Medium Dec 2019</kbd> Inverse Projection Transformation](https://towardsdatascience.com/inverse-projection-transformation-c866ccedef1c)
+- [<kbd>Medium Dec 2019</kbd> Inverse Projection Transformation](https://towardsdatascience.com/inverse-projection-transformation-c866ccedef1c) [[Notes](depth_estimation/inverse_projection.md)]
 - [<kbd>Medium mar 16 2020</kbd> Self-supervised Keypoint Learning — A Review](https://towardsdatascience.com/self-supervised-keypoint-learning-aade18081fc3)
 - [<kbd>Computational Intelligence and Neuroscience 20</kbd> Review of Stereo Matching Algorithms Based on Deep Learning](https://downloads.hindawi.com/journals/cin/2020/8562323.pdf)
 - [<kbd>CVPR 20 tutorial</kbd> Learning and understanding single image depth estimation in the wild](https://sites.google.com/view/cvpr-2020-depth-from-mono/home/talks-slides)
