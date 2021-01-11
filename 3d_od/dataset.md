@@ -8,7 +8,7 @@
 
 - [Simulation bad weather theory](../dataset/simulation.md)
 
-- [Downsample LiDAR 64beams](../dataset/downsample.md)
+- [Downsample LiDAR 64beams](../dataset/data_preprocessing.md)
 
 Ref | Highlight description
 -- | --
