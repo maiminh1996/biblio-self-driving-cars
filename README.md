@@ -32,6 +32,8 @@
 > **_Click on [<img src="doc/50.png" width="95">](README.md) which represents the "Reading & Writting" process of each paper to see more details_**  
 > **_Synthetic: [Loss function](loss_problem.md), [Network problem](network_problem.md), [Depth limit](depth_estimation/depth_limit.md), [Geometry](geometry.md)_**
 
+> **_[Data preprocessing](dataset/data_preprocessing.md)_**
+
 > **_Update: in the process of adding all the articles i've read before 2021_** ~_~  
 > **_Here is [time-list paper](time_list_paper.md)_**
 
