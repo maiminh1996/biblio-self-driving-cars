@@ -19,3 +19,13 @@
 [<kbd>CRL 20</kbd> Robust Semi-Supervised Monocular Depth Estimation with Reprojected Distances](http://proceedings.mlr.press/v100/guizilini20a/guizilini20a.pdf)
 
 ![](../doc/downsample_32_16_8_4.png)
+
+[<kbd>3DV 18</kbd> Sparse and Dense Data with CNNs:Depth Completion and Semantic Segmentation](https://arxiv.org/pdf/1808.00769.pdf)
+
+![](../doc/sparded_subsample.png)
+
+[<kbd>CVPR 19</kbd> Depth Coefficients for Depth Completion](https://arxiv.org/pdf/1903.05421.pdf) [[code](https://github.com/imransai/Depth-Coefficients-4-DepthCompletion/tree/050855a1b616a60eb3af36450f2d2a7edac92f0c)]
+
+[<kbd>arXiv 19</kbd> RefinedMPL: Refined Monocular PseudoLiDAR for 3D Object Detection in Autonomous Driving](https://arxiv.org/abs/1911.09712) Downsampler: downsample uniformly within different distance bins.
+
+[Lidar_Line_Downsample](https://github.com/chengtianle1997/Lidar_Line_Downsample/tree/df95edc73d8d1030a1a4e21d1ba2b46108701dd1)
