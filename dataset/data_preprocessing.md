@@ -1,4 +1,12 @@
-## LiDAR preprocessing
+<link rel="stylesheet" href="../styles.css">
+
+## Data processing
+
+- [LiDAR Preprocessing](#lidar-preprocessing)
+- [Downsample LiDAR 64 beams](#downsample-lidar-64-beams)
+- [LiDAR augmentation](#lidar-augmentation)
+
+### LiDAR preprocessing
 
 [<kbd>Sensors 20</kbd> Large-Scale Place Recognition Based onCamera-LiDAR Fused Descriptor](https://www.mdpi.com/1424-8220/20/10/2870/pdf)
 
@@ -10,7 +18,7 @@
 
 ![](../doc/resample_pcl.png)
 
-## Downsample LiDAR 64 beams
+### Downsample LiDAR 64 beams
 
 [<kbd>ICRL 20</kbd> Pseudo-LiDAR ++](https://arxiv.org/pdf/1906.06310.pdf) (Downsample to LiDAR 4 beams) [[Notes](pseudo_lidar++.md)]
 
@@ -29,3 +37,11 @@
 [<kbd>arXiv 19</kbd> RefinedMPL: Refined Monocular PseudoLiDAR for 3D Object Detection in Autonomous Driving](https://arxiv.org/abs/1911.09712) Downsampler: downsample uniformly within different distance bins.
 
 [Lidar_Line_Downsample](https://github.com/chengtianle1997/Lidar_Line_Downsample/tree/df95edc73d8d1030a1a4e21d1ba2b46108701dd1)
+
+### LiDAR augmentation
+
+[Quantifying  Data  Augmentation  for  LiDAR  based  3D  Object  Detection](https://arxiv.org/pdf/2004.01643.pdf)
+
+https://towardsdatascience.com/lidar-3d-object-detection-methods-f34cf3227aea
+
+![](../doc/lidar_augmentation.png)
