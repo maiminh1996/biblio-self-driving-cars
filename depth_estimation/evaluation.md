@@ -22,7 +22,7 @@ https://arxiv.org/pdf/2003.06620.pdf
 | SILog | Scale invariant logarithmic error | log(m)*100 |
 | sqErrorRel | Relative squared error | % |
 | absErrorRel | Relative absolute error | % |
-| iRMSE | Root mean squared error of the inverse depth | 1/km |
+| iRMSE | Root mean squared error of the inverse depth <br/>![](../doc/irmse.png) | 1/km |
 | ● thresh δ <1.25 <br/> ● thresh δ <1.25^2 <br/> ● thresh δ <1.25^3 |  |
 
 
@@ -31,8 +31,10 @@ https://arxiv.org/pdf/2003.06620.pdf
 | Metric (DC) | Description | Unit |
 | :-- | -- | :--: |
 | Accuracies | | |
-| iRMSE |  Root mean squared error of the inverse depth | 1/km |
-| iMAE | Mean absolute error of the inverse depth | 1/km |
-| RMSE | Root mean squared error | mm |
-| MAE | Mean absolute error | mm |
+| iRMSE |  Root mean squared error of the inverse depth <br/>![](../doc/irmse.png) | 1/km |
+| iMAE | Mean absolute error of the inverse depth <br/>![](../doc/imae.png) | 1/km |
+| RMSE | Root mean squared error <br/>![](../doc/rmse.png) | mm |
+| MAE | Mean absolute error <br/>![](../doc/mae.png) | mm |
 | ● thresh δ <1.25 <br/> ● thresh δ <1.25^2 <br/> ● thresh δ <1.25^3 |  |
+
+
