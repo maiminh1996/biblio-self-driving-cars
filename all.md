@@ -6,6 +6,7 @@
 - [Tools](#tools)
 - [Sensors](#sensors)
 - [Level of autonomous driving](#level-of-autonomous-driving)
+- [research question](#research-question)
 
 > **_Ref:_** [Everything You Need to Know About Self-Driving Cars](https://www.fool.com/investing/2017/06/03/everything-you-need-to-know-about-self-driving-car.aspx)
 
@@ -56,4 +57,10 @@ You can see the road signs highlighted in red, having been extracted from the or
 **Semi-autonomous** features are essentially in levels 1 through 3, and, like Tesla's Autopilot feature, are already in some luxury cars now.
 
 **Fully autonomous** cars, at levels 4 and 5, do not require a driver to be present at all. This type of vehicle is very far off, and some question its viability, but wide adoption of fully autonomous vehicles would be the true revolution some are anticipating.
+
+### Research question
+
+Ref: [Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges](https://arxiv.org/pdf/1902.07830.pdf)
+
+![](doc/open_research_question.png)
 
