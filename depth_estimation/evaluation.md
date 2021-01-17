@@ -23,7 +23,7 @@ https://arxiv.org/pdf/2003.06620.pdf
 | sqErrorRel | Relative squared error | % |
 | absErrorRel | Relative absolute error | % |
 | iRMSE | Root mean squared error of the inverse depth <br/>![](../doc/irmse.png) | 1/km |
-| ● thresh δ <1.25 <br/> ● thresh δ <1.25^2 <br/> ● thresh δ <1.25^3 |  |
+| ● thresh δ <1.25 <br/> ● thresh δ <1.25^2 <br/> ● thresh δ <1.25^3 | δ<threshold error provide a comprehensive comparison among the method <br/> δ<threshold error means the percent of pixels that satisfy δ<threshold, where δ <br/> ![](../doc/dis_pixel_error.png) <br/> (Disp)gt: the gth disparity; (Disp)pred: the predicted disparity |
 
 
 ## Depth completion
