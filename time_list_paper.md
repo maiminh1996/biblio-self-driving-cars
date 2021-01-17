@@ -8,6 +8,7 @@
 - [<kbd>Computational Intelligence and Neuroscience 20</kbd> Review of Stereo Matching Algorithms Based on Deep Learning](https://downloads.hindawi.com/journals/cin/2020/8562323.pdf)
 - [<kbd>CVPR 20 tutorial</kbd> Learning and understanding single image depth estimation in the wild](https://sites.google.com/view/cvpr-2020-depth-from-mono/home/talks-slides)
 - [<kbd>Science China Technological Sciences 20</kbd> Monocular Depth Estimation Based On DeepLearning: An Overview](https://arxiv.org/pdf/2003.06620.pdf)
+- [<kbd>Transactions on Intelligent Transportation Systems</kbd> Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving: Datasets, Methods, and Challenges](https://arxiv.org/pdf/1902.07830.pdf)
 
 ## 2021
 - [<kbd>CVPR 17</kbd> Unsupervised Monocular Depth Estimation with Left-Right Consistency](https://arxiv.org/pdf/1609.03677.pdf) [TOREAD]
