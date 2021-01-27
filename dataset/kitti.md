@@ -19,9 +19,9 @@
 
 
 ### Comment
-● a normal size car from 40m has a height of 25 pixels inRGB image et 51m for a pedestrian with the same height.
+#### a normal size car from 40m has a height of 25 pixels inRGB image et 51m for a pedestrian with the same height.
 
-(error miss-match)???
+#### (error miss-match)???
 
 Dense depth map gth: accumulation of 11 frames LiDAR 64 beams
 
@@ -31,7 +31,23 @@ Sparse LiDAR 64 beams
 
 ![](../doc/sparse_depth.png)
 
-
+#### the depth (m) is encoded as image: image = depth * 256.0
+to encode: 
+```python
+from PIL import Image
+import numpy as np
+# load from lidar .bin & then project it into image --> depth.shape == img.shape
+depth_img = (depth*256.0).astype(np.uint16)
+depth_img = Image.fromarray(depth_img)
+depth_img.save('path_save_pred.png')
+```
+to decode:
+```python
+import skimage
+import skimage.io 
+depth_img = skimage.io.imread('path_save_pred.png')
+depth = depth_img.astype(np.float32) / 256.0
+```
 
 
 <!-- TEAMPLATE DATASET-->
