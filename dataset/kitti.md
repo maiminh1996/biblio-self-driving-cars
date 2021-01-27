@@ -21,6 +21,16 @@
 ### Comment
 ● a normal size car from 40m has a height of 25 pixels inRGB image et 51m for a pedestrian with the same height.
 
+(error miss-match)???
+
+Dense depth map gth: accumulation of 11 frames LiDAR 64 beams
+
+![](../doc/dense_depth.png)
+
+Sparse LiDAR 64 beams 
+
+![](../doc/sparse_depth.png)
+
 
 
 
@@ -46,3 +56,4 @@
 ● 
 
 -->
+
