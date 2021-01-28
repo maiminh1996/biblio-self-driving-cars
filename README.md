@@ -64,7 +64,10 @@
 
 </details>
 
-
+#### Tutorial
+- [CVPR 2020 Tutorial](http://cvpr2020.thecvf.com/program/tutorials)
+	- [All You Need to Know About Self-Driving](http://www.allaboutselfdriving.com/)
+- [NeurIPS 2020 Tutorial](https://nips.cc/virtual/2020/public/e_tutorials.html)
 
 <!--
 
