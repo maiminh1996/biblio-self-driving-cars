@@ -24,13 +24,14 @@ Ref: [LiDAR vs. Cameras for Self Driving Cars – What’s Best?](https://www.au
 
 | Sensor | Camera | LiDAR | RADAR |
 | -- | -- | -- | -- |
-| Difi | | use of light wavelengths <br/> range: HDL64 S3D and VLP32C scanners achieve a range of 100 m and 120 m| uses radio waves <br/> rang: up to 200 m | 
-| aim to | | identify objects and measure distances| identify objects and determine velocity and angles|
-| Str | ● detect color, contrast, and high resolution better than other sensors <br/> ● long range | ● good for detecting speed and distance up to 200 meters in light or dark <br/> ● works well in low light | ● good range <br/> ● better than LIDAR in snow, fog, and rain <br/> ● better at detecting objects at close range|
-| Weak | ● only work in good light conditions<br/>● performance diminishes as lights dim.<br/>● don’t provide us with ‘Depth Information’ as LiDAR| ● not good at detecting very close objects <br/>● not work very well in fog, rain, or dust (due to its use of light wavelengths) (they generate puffy point clouds that may render the output of LiDAR point cloud inaccurate)<br/>●  doesn't distinguish color and contrast <br/>●  very expensive (75000$ for LiDAR 64 beams) |  low resolution|
-| awere | | ● cheaper in the future?<br/>●  down to low resolution (32, 16, 4 beams) for cheaper | 
+| Difi | | Use of light wavelengths <br/> Range: HDL64 S3D and VLP32C scanners achieve a range of 100 m and 120 m | Use radio waves <br/> Rang: up to 200 m | 
+| Aim to | | Identify objects and measure distances | Identify objects and determine velocity and angles |
+| Str | ● Rich texture information (color, contrast, etc) <br/> ● Cheap <br/> ● High resolution <br/> ● Long range | ● Good for detecting speed and distance up to 200 meters in light or dark <br/> ● Invariant to ambient light | ● Measures radial distance AND velocity <br/> ● Good range (near & long) <br/> ● More robust than LIDAR in snow, fog & rain <br/> ● Better at detecting objects at close range |
+| Weak | ● Only work in good light conditions <br/> ● Sensitive to lighting conditions <br/> ● Len artifacts (distortion, vignette, flare, etc) <br/>● No explicit depth information | ● Not good at detecting very close objects <br/> ● Not work very well in fog, rain, or dust (due to its use of light wavelengths) (they generate puffy point clouds that may render the output of LiDAR point cloud inaccurate) <br/> ● Doesn't distinguish color & contrast <br/> ● Very expensive (75000$ for LiDAR 64 beams) <br/> ● Limited resolution | ● Weak returns from small objects <br/> ● Lower resolution than LiDAR <br/> ● Multipath propagation |
+| Awere | | ● Cheaper in the future? <br/> ● Down to low resolution (32, 16, 4 beams) for cheaper | |
 
 Others: 
+- LiDAR - Solid State, Ultrasonic, Cameras - Infrared, Microphones
 - **Ultrasonic** systems emit ultrasonic sound waves and determine distance by how long these waves take to return to the source (this is how bats echolocate). Ultrasonic sensors are good for close-range detection in all weather, but do not have the range of LIDAR or radar.
 - Simulation: downsampling process the scan lines of the LiDAR depth(64-line to 32-line...) --> TODO
 
@@ -45,7 +46,7 @@ You can see the road signs highlighted in red, having been extracted from the or
 
 ### Level of autonomous driving
 
-| Autonomous | Difi |
+| Autonomous | Description |
 | -- | -- |
 | Level 0 | No self-driving feature |
 | Level 1 | Controls one system at a time, like cruise control, or automatic emergency braking |
