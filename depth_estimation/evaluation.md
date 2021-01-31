@@ -35,6 +35,6 @@ https://arxiv.org/pdf/2003.06620.pdf
 | iMAE | Mean absolute error of the inverse depth <br/>![](../doc/imae.png) | 1/km |
 | RMSE | Root mean squared error <br/>![](../doc/rmse.png) | mm |
 | MAE | Mean absolute error <br/>![](../doc/mae.png) | mm |
-| ● thresh δ <1.25 <br/> ● thresh δ <1.25^2 <br/> ● thresh δ <1.25^3 |  |
+| δi | δi: percentage of predicted pixels where the relative error is within 1.25^i <br/> ![](../doc/teta.png) <br/> where |.| denotes  the cardinality of a set. dˆ and d are prediction and associated groundtruth. Most studies adopt i = 1,2,3 |
 
 
