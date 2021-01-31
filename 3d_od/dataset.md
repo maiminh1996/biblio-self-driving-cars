@@ -10,6 +10,8 @@
 
 - [Downsample LiDAR 64beams](../dataset/data_preprocessing.md)
 
+- [Synchronization and Calibration between LiDAR and Camera](https://yuhuang-63908.medium.com/deep-learning-based-time-synchronization-and-calibration-between-lidar-and-camera-3e87865edf7f)
+
 Ref | Highlight description
 -- | --
 KITTI (3D OD) [<kbd>CVPR 12</kbd>](http://www.cvlibs.net/publications/Geiger2012CVPR.pdf) [<kbd>IJRR 13</kbd>](http://ww.cvlibs.net/publications/Geiger2013IJRR.pdf) | ● Stereo (1224×368) + LiDAR 64 beams <br/> ● Real dataset: 7481 training (splitted as 3DOP [<kbd>NIPS 15</kbd>](https://papers.nips.cc/paper/2015/file/6da37dd3139aa4d9aa55b8d237ec5d4a-Paper.pdf) into 3712 training & 3769 validation) & 7518 test samples [[Notes](../dataset/kitti.md)] <!-- -->
