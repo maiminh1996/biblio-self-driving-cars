@@ -2,6 +2,9 @@
 <link rel="stylesheet" style="text/css" href="styles.css">
 <!--     -->
 
+## End-to-end autonomy
+![](doc/autonomy_stack.png)
+
 ## All about self-driving cars
 - [Tools](#tools)
 - [Sensors](#sensors)
