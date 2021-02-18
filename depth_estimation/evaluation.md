@@ -14,12 +14,14 @@ https://papers.nips.cc/paper/2014/file/7bccfde7714a1ebadf06c5f4cea752c1-Paper.pd
 
 https://arxiv.org/pdf/2003.06620.pdf
 
+http://www.cvlibs.net/datasets/kitti/eval_depth.php?benchmark=depth_prediction
+
 ## Depth prediction
 
 | Metric | Description | Unit |
 | :-- | -- | :--: |
 | Accuracies | | |
-| SILog | Scale invariant logarithmic error | log(m)*100 |
+| SILog | Scale invariant logarithmic error <br/> ![](../doc/silog.png) | log(m)*100 |
 | sqErrorRel | Relative squared error <br/> ![](../doc/sq_rel.png) | % |
 | absErrorRel | Relative absolute error<br/> ![](../doc/abs_rel.png) | % |
 | iRMSE | Root mean squared error of the inverse depth <br/>![](../doc/irmse.png) | 1/km |
