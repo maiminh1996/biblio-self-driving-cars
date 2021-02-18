@@ -3,7 +3,7 @@
 <!--     -->
 
 ## Rendering rain
-
+[Rain rendering for evaluating and improving robustness to bad weather](https://arxiv.org/abs/2009.03683)
 
 ## Rendering Fog
 
@@ -18,7 +18,10 @@ Rendering fog from [Physics-Based Rendering for Improving Robustness to Rain](ht
 Additional Simulation Results [Seeing Through Fog Without Seeing Fog:Deep Multimodal Sensor Fusion in Unseen Adverse Weather (Supplemental Material)](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/figures/AdverseWeatherFusion_Supplement.pdf)
 
 - **Fog density, extinction coefficient β (beta)**: fog results of the formation of small suspended water droplets (10^−3 ~ ^10−2mm) at the surface of the earth (closely related to the optical thickness of the fog)
-- **Maximum visibility in fog** V: V=−ln(CT)/β <br/> where **CT**: the minimum identifiable contrast (typically 0.05 for humans) <br/> Ex: β=0.05 --> V=60m
+- **Maximum visibility in fog** V: ![](../doc/visibility.png) V=−ln(CT)/β <br/> where **CT**: the minimum identifiable contrast (typically 0.05 for humans) <br/> Ex: β=0.05 --> V=60m
+
+https://hal.archives-ouvertes.fr/hal-01068534/document
+
 - **global ambient component L**
 
 ![](../doc/simu_fog_math.png)
