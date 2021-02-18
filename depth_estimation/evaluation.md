@@ -20,8 +20,8 @@ https://arxiv.org/pdf/2003.06620.pdf
 | :-- | -- | :--: |
 | Accuracies | | |
 | SILog | Scale invariant logarithmic error | log(m)*100 |
-| sqErrorRel | Relative squared error | % |
-| absErrorRel | Relative absolute error | % |
+| sqErrorRel | Relative squared error <br/> ![](../doc/sq_rel.png) | % |
+| absErrorRel | Relative absolute error<br/> ![](../doc/abs_rel.png) | % |
 | iRMSE | Root mean squared error of the inverse depth <br/>![](../doc/irmse.png) | 1/km |
 | ● thresh δ <1.25 <br/> ● thresh δ <1.25^2 <br/> ● thresh δ <1.25^3 | δ<threshold error provide a comprehensive comparison among the method <br/> δ<threshold error means the percent of pixels that satisfy δ<threshold, where δ <br/> ![](../doc/dis_pixel_error.png) <br/> (Disp)gt: the gth disparity; (Disp)pred: the predicted disparity |
 
